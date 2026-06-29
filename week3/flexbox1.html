@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 1</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(235, 235, 235);
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+    }
+
+    p {
+        font-size: 1em;
+        margin: 0.5em 0;
+        color: rgb(108, 108, 108);
+    }
+
+    .container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding: 1em;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .project {
+        background-color: white;
+        padding: 18px;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="project">
+            <img src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-017-copyright.jpg"
+                alt="Project 1" style="width: 100%; height: auto; border-radius: 5px;">
+            <h1>Residential projects</h1>
+            <p>We build sustainable and modern homes for comfortable living.</p>
+        </div>
+        <div class=" project"> <img
+                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-018-copyright.jpg"
+                alt="Project 2" style="width: 100%; height: auto; border-radius: 5px;">
+            <h1>Commercial spaces</h1>
+            <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
+        </div>
+        <div class="project"> <img
+                src="https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-019-copyright.jpg"
+                alt="Project 3" style="width: 100%; height: auto; border-radius: 5px;">
+            <h1>Infrastructure works</h1>
+            <p>We develop strong, reliable infrastructure for growing communities.</p>
+        </div>
+    </div>
+</body>
+
+</html>
