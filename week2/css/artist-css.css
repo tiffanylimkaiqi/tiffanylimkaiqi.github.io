@@ -13,3 +13,14 @@ h2 {
 p {
     color: #85abc7;
 }
+
+button {
+    background-color: #790D16;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: white
+}
