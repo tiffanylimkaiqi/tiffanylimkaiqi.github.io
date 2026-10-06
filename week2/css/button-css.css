@@ -3,4 +3,23 @@ button.black {
     color: white;
     padding: 10px 20px;
     border: 2px solid black;
+    margin-right: 10px;
+}
+
+button.green {
+    background-color: rgb(86, 164, 89);
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid rgb(86, 164, 89);
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+button.yellow {
+    background-color: rgb(249, 218, 78);
+    color: black;
+    padding: 10px 60px;
+    border: 2px solid rgb(249, 218, 78);
+    border-radius: 20px;
 }
