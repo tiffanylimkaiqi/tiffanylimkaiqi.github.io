@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(255, 245, 130);
+    color: red;
+}
+
+h1,
+h2 {
+    color: darkblue;
+    background-color: lightblue;
+    border: 4px dashed darkblue;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 40px;
+    font-weight: normal;
+}
+
+p {
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 8px;
+}
