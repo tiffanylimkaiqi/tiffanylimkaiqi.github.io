@@ -33,6 +33,13 @@ body {
     width: 100%;
     background-size: cover;
     aspect-ratio: 1/1;
-    border: radius 10px;
-    min-height: 10px;
+    border-radius: 10px;
+}
+
+.infrastructure-img {
+    background-image: url('../images/infrastructure.jpg');
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
 }
