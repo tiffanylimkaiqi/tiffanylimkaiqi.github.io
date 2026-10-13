@@ -1,15 +1,19 @@
 body {
     background-color: #bb2424;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     display: flex;
+    max-width: 1024px;
+    margin: auto;
 }
 
 .box {
     background-color: white;
     padding: 20px;
     border-radius: 20px;
+    flex: 1;
 }
 
 .residential-img {
@@ -22,4 +26,13 @@ body {
 
 .residential-text {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.commercial-img {
+    background-image: url('../images/commercial.jpg');
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    border: radius 10px;
+    min-height: 10px;
 }
