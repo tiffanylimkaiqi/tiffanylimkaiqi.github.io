@@ -1,0 +1,25 @@
+body {
+    background-color: #bb2424;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.residential-img {
+    background-image: url('../images/residential.jpg');
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.residential-text {
+    font-family: Arial, Helvetica, sans-serif;
+}

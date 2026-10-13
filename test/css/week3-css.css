@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&family=Long+Cang&family=Oswald:wght@200..700&family=Playwrite+CA+Guides&display=swap');
+
+body {
+    background-color: #ebb2b2;
+    font-family: 'oswald', sans-serif;
+    background-image: url('../images/duck\ bath.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Isometra', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Playwrite CA Guides', cursive;
+    font-style: italic;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Long Cang', cursive;
+    margin: 0px;
+}
+
+p {
+    color: #ffbb00;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 2;
+    margin: 20px;
+    border: 10px solid #4c79ff;
+    border-radius: 20px;
+    box-shadow: 8px 2px 20px 7px #4162c3;
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff009d;
+    font-size: 25px;
+}

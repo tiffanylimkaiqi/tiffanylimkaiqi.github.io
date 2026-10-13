@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* Add some space between the boxes */
+    max-width: 800px;
+    margin: auto;
+    /* Center the container horizontally */
+}
+
+.box {
+    padding: 10px;
+    flex: 1;
+}
+
+.london {
+    background-color: #FFF4A3;
+}
+
+.oslo {
+    background-color: #FFC0C7;
+    flex: 2;
+}
+
+.rome {
+    background-color: #D9EEE1;
+}
