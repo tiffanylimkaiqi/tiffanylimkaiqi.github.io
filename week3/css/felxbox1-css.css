@@ -1,12 +1,18 @@
 body {
-    background-color: #bb2424;
+    background-color: rgb(241, 241, 236);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 28px;
 }
 
 .container {
     display: flex;
     max-width: 1024px;
     margin: auto;
+    gap: 30px;
+    height: auto
 }
 
 .box {
@@ -14,7 +20,9 @@ body {
     padding: 20px;
     border-radius: 20px;
     flex: 1;
+    margin-bottom: 0px;
 }
+
 
 .residential-img {
     background-image: url('../images/residential.jpg');
@@ -22,10 +30,6 @@ body {
     background-size: cover;
     aspect-ratio: 1/1;
     border-radius: 10px;
-}
-
-.residential-text {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .commercial-img {
