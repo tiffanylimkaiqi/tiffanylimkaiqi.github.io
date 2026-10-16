@@ -4,6 +4,10 @@ body {
     font-family: "Space Grotesk", sans-serif;
 }
 
+.bigger-container {
+    gap: 70px;
+}
+
 .container {
     display: flex;
     max-width: 1440px;
@@ -48,4 +52,52 @@ body {
     border-radius: 14px;
     padding: 20px 35px 20px 35px;
     background-color: white;
+}
+
+.hero-container {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    gap: 150px;
+}
+
+.hero-info {
+    max-width: 550px;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero-img {
+    background-image: url(../images/Illustration.jpg);
+    width: 100%;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+}
+
+.hero-button {
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-color: black;
+    border-radius: 14px;
+    padding: 20px 35px 20px 35px;
+    background-color: black;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 60px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
 }
