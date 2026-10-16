@@ -6,6 +6,8 @@ body {
 
 .bigger-container {
     gap: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .container {
@@ -13,8 +15,6 @@ body {
     max-width: 1440px;
     margin: auto;
     height: auto;
-    padding-left: 100px;
-    padding-right: 100px;
     padding-top: 40px;
     align-items: center;
 }
@@ -59,8 +59,6 @@ body {
     max-width: 1440px;
     margin: auto;
     height: auto;
-    padding-left: 100px;
-    padding-right: 100px;
     padding-top: 40px;
     gap: 150px;
 }
@@ -91,6 +89,14 @@ body {
     align-items: center;
     margin-top: 20px;
 }
+
+.companies-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+
 
 h1 {
     font-weight: 500;
