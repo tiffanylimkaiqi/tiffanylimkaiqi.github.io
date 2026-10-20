@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(241, 241, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    gap: 30px;
+    height: auto
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1;
+    margin-bottom: 0px;
+}
+
+
+.residential-img {
+    background-image: url('../images/residential.jpg');
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.commercial-img {
+    background-image: url('../images/commercial.jpg');
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.infrastructure-img {
+    background-image: url('../images/infrastructure.jpg');
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

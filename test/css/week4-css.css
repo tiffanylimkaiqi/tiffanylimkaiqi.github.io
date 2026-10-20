@@ -1,0 +1,36 @@
+body {
+    background-color: yellowgreen;
+}
+
+button {
+    display: block;
+}
+
+div {
+    display: inline;
+}
+
+/*Tablet*/
+@media screen and (max-width: 700px) {
+    body {
+        background-color: lightblue;
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        color: darkblue;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 500px) {
+    body {
+        background-color: pink;
+        color: white;
+    }
+
+    h1 {
+        color: darkred;
+    }
+}
