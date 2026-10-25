@@ -1,0 +1,19 @@
+.box {
+    margin: auto;
+    max-width: 980px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.header {
+    display: flex;
+    margin: 20px 10px 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-right: 0;
+    padding-left: auto;
+}
