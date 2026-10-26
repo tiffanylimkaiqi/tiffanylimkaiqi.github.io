@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+body {
+    font-family: "Schoolbell", cursive;
+}
+
 .container {
     margin: auto;
     max-width: 820px;
@@ -8,7 +14,7 @@
     padding: 20px 15px 20px 15px;
     align-items: center;
     justify-content: space-between;
-    background-color: pink;
+    background-color: rgb(123, 84, 47);
 }
 
 .logo {}
@@ -20,7 +26,7 @@
 }
 
 .content-bg {
-    background-image: url(bg-img.jpg);
+    background-image: url(../images/bg-img.jpg);
     background-size: cover;
     padding-bottom: 10px;
 }
@@ -30,6 +36,8 @@
     margin: auto;
     padding-top: 30px;
     flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .profile-image {
@@ -45,11 +53,16 @@
     margin: auto;
 
     h1 {
-        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(77, 42, 0);
     }
 
     p {
-        padding-top: 20px;
+        padding-top: 10px;
+        color: rgb(193, 132, 59);
+    }
+
+    h3 {
+        color: rgb(242, 169, 0);
     }
 }
 
@@ -57,29 +70,33 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     gap: 10px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .exercise-list {
     flex: 1;
     flex-direction: column;
     padding: 10px;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.789);
+    background-color: rgba(182, 118, 29, 0.532);
     border-radius: 15px;
     text-align: center;
 
-    a {
-        text-decoration: none;
-    }
-
     h2 {
         margin-bottom: 0px;
+        color: rgb(249, 230, 168);
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(77, 42, 0);
     }
 
     hr {
         margin-top: 4px;
+        color: rgb(204, 111, 0);
         border-style: solid;
     }
 }
@@ -89,8 +106,10 @@
     flex-direction: column;
     padding: 20px 15px 20px 15px;
     align-items: center;
-    background-color: pink;
+    background-color: rgb(123, 84, 47);
     gap: 10px;
+    color: rgb(249, 230, 168);
+    font-size: 12px;
 }
 
 .footer-links {
