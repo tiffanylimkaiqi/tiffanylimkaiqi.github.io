@@ -130,13 +130,17 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .card {
+    width: 520px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 50px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
@@ -159,12 +163,26 @@ p {
 
 .highlight-green {
     background-color: #B9FF66;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.highlight-white {
+    background-color: white;
+    padding: 7px;
+    border-radius: 7px;
 }
 
 .card-white {
     background-color: #f3f3f3;
+}
+
+.card-green {
+    background-color: #B9FF66;
+}
+
+.card-dark {
+    background-color: #191A23;
 }
 
 .card-img {
@@ -173,6 +191,14 @@ p {
 }
 
 .learn-more {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.learn-more-dark {
+    color: white;
     display: flex;
     align-items: center;
     font-size: 20px;
