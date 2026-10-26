@@ -8,12 +8,38 @@
 
 .header {
     display: flex;
-    margin: 20px 10px 20px 10px;
+    padding: 20px 15px 20px 15px;
     align-items: center;
     justify-content: space-between;
+    background-color: pink;
 }
 
-.logo {
-    padding-right: 0;
-    padding-left: auto;
+.logo {}
+
+.profile-box {
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+.profile-image {
+    img {
+        border-radius: 100%;
+    }
+
+    margin: auto;
+}
+
+.profile-desc {
+    text-align: center;
+    margin: auto;
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        padding-top: 20px;
+    }
 }
