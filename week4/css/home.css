@@ -450,4 +450,98 @@ p {
         margin-left: 30px;
         margin-right: 30px;
     }
+
+    .services {
+        margin-top: 50px;
+    }
+
+    .services-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .services-header h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .services-boxes {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        padding: 25px;
+        border-radius: 30px;
+        align-items: stretch;
+    }
+
+    .card-info {
+        align-self: stretch;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .card-info h3 {
+        font-size: 20px;
+        max-width: 180px;
+    }
+
+    .highlight-green,
+    .highlight-white {
+        padding: 3px 6px;
+    }
+
+    .card-img {
+        width: 55%;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    .learn-more,
+    .learn-more-dark {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .learn-more img,
+    .learn-more-dark img {
+        width: 30px;
+    }
+
+    .cta-box {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 25px;
+        margin-top: 40px;
+        border-radius: 30px;
+    }
+
+    .cta-left {
+        max-width: none;
+    }
+
+    .cta-left h3 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .cta-left p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .cta-right {
+        display: none;
+    }
+
+    .cta-button {
+        align-self: stretch;
+        font-size: 15px;
+        padding: 15px 30px;
+    }
 }
