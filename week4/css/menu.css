@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 18px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.navi div {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navi div.active {
+    color: #ff6224;
+}
+
+.navi-call {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.call img {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-contact {
+    background-color: #ff6224;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Hamburger image: hidden on desktop */
+.hamburger {
+    display: none;
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navi,
+    .btn-contact {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .call {
+        display: none;
+    }
+
+    .container {
+        padding: 14px 20px;
+    }
+}
