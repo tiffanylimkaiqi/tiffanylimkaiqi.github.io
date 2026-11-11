@@ -83,10 +83,27 @@ body {
     text-align: center;
     padding: 130px;
     margin: 0;
+
+    h2 {
+        font-family: "Bebas Neue", cursive;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 70px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 19px;
+        text-align: left;
+        padding: 0px 300px;
+    }
 }
 
 .popular-quote {
-    font-family: "lora", serif;
+    font-family: "Lora", serif;
     font-style: italic;
     font-size: 46px;
     font-weight: 400;
