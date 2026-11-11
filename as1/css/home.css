@@ -100,6 +100,8 @@ body {
         text-align: left;
         padding: 0px 300px;
     }
+
+    padding-bottom: 50px;
 }
 
 .popular-quote {
@@ -107,4 +109,58 @@ body {
     font-style: italic;
     font-size: 46px;
     font-weight: 400;
+}
+
+.cards-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+
+    h4 {
+        font-family: "Bebas Neue", cursive;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+
+.card-main {
+    flex: 1.5;
+    max-width: 400px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 4/6;
+    }
+
+    h4 {
+        font-family: "Bebas Neue", cursive;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 56px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+    }
 }
