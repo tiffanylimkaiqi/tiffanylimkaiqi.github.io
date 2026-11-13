@@ -279,3 +279,31 @@ body {
     width: 16px;
     height: 16px;
 }
+
+.hamburger-menu {
+    display: none;
+}
+
+/*Media Queries*/
+/* For tablets */
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 40px;
+        position: relative;
+        background-color: black;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+}
