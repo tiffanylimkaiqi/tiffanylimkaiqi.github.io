@@ -299,3 +299,64 @@ body {
     width: 16px;
     height: 16px;
 }
+
+/*Media Qeury*/
+
+/*Tablet*/
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 40px;
+        position: relative;
+        background-color: black;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.534)), url("../images/Best-table.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-content {
+        margin: 140px 80px;
+
+        h1 {
+            text-align: left;
+            margin: 0;
+        }
+
+        p {
+            max-width: 530px;
+        }
+    }
+
+    .elegance {
+        padding: 60px 130px;
+    }
+
+    .card,
+    .card-main {
+        width: 100%;
+        flex: none;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        max-width: none;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 70px;
+    }
+}
