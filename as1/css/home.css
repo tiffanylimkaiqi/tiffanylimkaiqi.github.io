@@ -234,6 +234,10 @@ body {
         color: white;
         max-width: 550px;
     }
+
+    img {
+        display: none;
+    }
 }
 
 .footer {
@@ -363,6 +367,12 @@ body {
         flex: none;
         max-width: 100%;
         padding-bottom: 50px;
+
+        img {
+            aspect-ratio: 6/4;
+            width: 100%;
+            height: auto;
+        }
     }
 
     .card-main {
@@ -371,13 +381,6 @@ body {
         h4 {
             font-size: 30px;
         }
-    }
-
-    .card img,
-    .card-main img {
-        aspect-ratio: 6/4;
-        width: 100%;
-        height: auto;
     }
 
     .atmosphere {
@@ -459,11 +462,39 @@ body {
 
     .card,
     .card-main {
-        margin-bottom: 60px;
+        padding-bottom: 60px;
 
         img {
             aspect-ratio: 3/3;
         }
     }
 
+    .atmosphere img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 40px;
+    }
+
+    .atmosphere {
+        max-height: 700px;
+        aspect-ratio: auto;
+        align-items: center;
+        text-align: center;
+        background-image: none;
+        background-color: black;
+        padding: 0 0 50px;
+    }
+
+    .atmosphere h1 {
+        font-size: 48px;
+        margin: 0 0 24px;
+        padding: 0 24px;
+    }
+
+    .atmosphere p {
+        margin: 0 auto;
+        padding: 0 24px;
+        line-height: 1.7;
+    }
 }
