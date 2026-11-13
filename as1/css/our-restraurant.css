@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: wheat;
+    background-color: white;
     margin: 0px;
     gap: 0px;
     padding: 0px;
@@ -66,6 +66,7 @@ body {
 }
 
 .hero {
+    background-color: black;
     display: flex;
 }
 
@@ -164,11 +165,19 @@ body {
 }
 
 .gallery {
+
+    background-color: white;
     text-align: center;
     padding-top: 120px;
     padding-bottom: 50px;
 
     h1 {
+
+        font-family: "Bebas Neue", cursive;
+        text-decoration: none;
+        font-size: 95px;
+        font-weight: 400;
+
         margin-bottom: 0;
     }
 
@@ -182,6 +191,7 @@ body {
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
+    padding: auto 0;
 
     img {
         display: block;
@@ -190,4 +200,102 @@ body {
         aspect-ratio: 1/1;
         object-fit: cover;
     }
+}
+
+.review {
+    background-color: white;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        text-decoration: none;
+        font-size: 95px;
+        font-weight: 400;
+        margin-top: 150px;
+        margin-bottom: 0;
+    }
+}
+
+.reviews-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    text-align: center;
+    padding: 60px 100px 70px;
+    gap: 20px;
+}
+
+.reviews-box {
+    flex: 1;
+    max-width: 400px;
+    background-color: black;
+    color: white;
+    padding: 40px 10px;
+
+    h4 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        margin-bottom: 50px;
+    }
+
+    .stars {
+        color: #AB8C4C;
+        font-size: 36px;
+        letter-spacing: 15px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.275), rgba(18, 18, 18, 0.275)), url('../images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding: 150px 130px;
+
+    p {
+        font-family: "Lora", serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 19px;
+        color: white;
+        max-width: 550px;
+        text-align: center;
+        max-width: 700px;
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social-icon img {
+    width: 16px;
+    height: 16px;
 }
