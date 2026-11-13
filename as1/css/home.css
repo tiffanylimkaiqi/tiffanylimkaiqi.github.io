@@ -306,4 +306,29 @@ body {
         flex-direction: column-reverse;
     }
 
+    .hero-img {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-content {
+        margin: 70px 150px;
+        margin-right: 300px;
+        text-align: left;
+        gap: 30px;
+
+        h1 {
+            margin: 0px;
+        }
+
+        p {
+            max-width: 400px;
+        }
+    }
+
 }
