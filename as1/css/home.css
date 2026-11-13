@@ -37,6 +37,7 @@ body {
 }
 
 .header {
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -414,6 +415,55 @@ body {
     .social-icon img {
         width: 20px;
         height: 20px;
+    }
+
+}
+
+/* For mobile phones */
+@media (max-width: 640px) {
+
+    .hamburger-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-content {
+        margin: 100px 40px;
+        margin-right: 180px;
+        text-align: left;
+
+        h1 {
+            margin: 0px;
+            font-size: 84px;
+            margin: 35px 0px;
+        }
+
+        p {
+            max-width: 400px;
+        }
+    }
+
+    .popular {
+        align-items: center;
+        padding: 60px 50px;
+
+        h2 {
+            font-size: 63px;
+        }
+
+        h4 {
+            max-width: 175px;
+        }
+    }
+
+    .card,
+    .card-main {
+        margin-bottom: 60px;
+
+        img {
+            aspect-ratio: 3/3;
+        }
     }
 
 }
