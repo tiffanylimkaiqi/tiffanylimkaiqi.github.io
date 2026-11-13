@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: wheat;
+    margin: 0px;
+    gap: 0px;
+    padding: 0px;
+}
+
+.logo {
+
+    display: flex;
+    gap: 18px;
+
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-family: "Bebas Neue", cursive;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+        align-self: center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+
+.header {
+    background-color: #00000024;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.nav {
+    font-family: "Work Sans", sans-serif;
+    margin: auto;
+    margin-right: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #A1A1A1;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
