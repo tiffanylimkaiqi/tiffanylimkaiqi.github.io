@@ -132,7 +132,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 120px;
+    gap: 70px;
     padding-bottom: 80px;
     padding-top: 10px;
     margin: 0;
@@ -142,6 +142,7 @@ body {
     flex: 1;
     flex-direction: column;
     max-width: 300px;
+    min-width: 0;
     align-items: center;
     text-align: center;
     aspect-ratio: 4/5;
@@ -158,9 +159,11 @@ body {
 .card-main {
     flex: 1.5;
     max-width: 420px;
+    min-width: 0;
     align-items: center;
     text-align: center;
     aspect-ratio: 4/5;
+    object-fit: cover;
 
 }
 
@@ -218,7 +221,7 @@ body {
 }
 
 .reviews-container {
-    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -343,7 +346,7 @@ body {
     }
 
     .elegance {
-        padding: 60px 130px;
+        padding: 60px 100px;
     }
 
     .card,
@@ -358,5 +361,86 @@ body {
     .cards-container {
         flex-direction: column;
         gap: 70px;
+    }
+
+    .gallery-grid {
+        padding: 80px 60px;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 140px;
+        padding: 80px;
+    }
+
+    .reviews-box {
+        flex: none;
+        width: 75%;
+        max-width: none;
+        margin: 0 80px;
+        padding: 90px 120px;
+        gap: 80px;
+
+        p {
+            margin: 60px;
+        }
+    }
+
+    .footer {
+        padding: 130px 150px;
+    }
+
+    .footer img {
+        width: 100%;
+        height: auto;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+/* For mobile phones */
+@media (max-width: 640px) {
+
+    .hamburger-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-content {
+        margin: 50px 35px;
+        text-align: left;
+    }
+
+    .elegance {
+        padding: 40px 100px;
+    }
+
+    .cards-container {
+        gap: 40px;
+        padding-bottom: 20px;
+    }
+
+    .card img,
+    .card-main img {
+        aspect-ratio: 1/1;
     }
 }
