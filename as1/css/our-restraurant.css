@@ -439,8 +439,38 @@ body {
         padding-bottom: 20px;
     }
 
-    .card img,
-    .card-main img {
-        aspect-ratio: 1/1;
+    .gallery {
+        padding-top: 80px;
+        padding-bottom: 0px;
     }
+
+    .gallery-grid {
+        padding: 20px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .reviews-container {
+        gap: 65px;
+        padding: 65px 55px;
+    }
+
+    .reviews-box {
+        padding: 50px 50px;
+
+        p {
+            margin: 30px 0;
+        }
+    }
+
+    .footer {
+        padding: 40px 45px 100px 45px;
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
 }
