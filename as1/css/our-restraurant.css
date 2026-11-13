@@ -166,7 +166,7 @@ body {
 .gallery {
     text-align: center;
     padding-top: 120px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 
     h1 {
         margin-bottom: 0;
@@ -176,5 +176,18 @@ body {
         font-family: "Lora", serif;
         font-size: 19px;
         margin: 0;
+    }
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        display: block;
+        width: 25%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
     }
 }
