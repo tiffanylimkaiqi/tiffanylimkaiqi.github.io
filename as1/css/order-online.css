@@ -202,42 +202,41 @@ body {
         aspect-ratio: 3/3;
         background-position: center;
     }
+}
 
+.signature-text {
 
-    .signature-text {
+    padding: 35px 30px;
 
-        padding: 35px 30px;
-
-        h1 {
-            font-family: "Bebas Neue", cursive;
-            font-weight: 400;
-            font-size: 31px;
-            margin: 10px 0px 0px;
-        }
-
-        h3 {
-            font-family: "Work Sans", sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            margin: 0px;
-            font-size: 17px;
-            text-align: left;
-        }
-
-        p {
-            font-family: "Lora", serif;
-            font-size: 19px;
-            font-weight: 400;
-            text-align: left;
-            max-width: 410px;
-        }
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 31px;
+        margin: 10px 0px 0px;
     }
 
-    .price {
-        font-family: "Work-Sans", sans-serif;
+    h3 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0px;
         font-size: 17px;
-        color: #BDA16B;
+        text-align: left;
     }
+
+    p {
+        font-family: "Lora", serif;
+        font-size: 19px;
+        font-weight: 400;
+        text-align: left;
+        max-width: 410px;
+    }
+}
+
+.price {
+    font-family: "Work-Sans", sans-serif;
+    font-size: 17px;
+    color: #BDA16B;
 }
 
 .press {
@@ -386,5 +385,23 @@ body {
     .press {
         flex-direction: column;
         gap: 10px;
+        padding: 0px 30px 30px;
+        margin-top: 10px;
+    }
+
+    .quantity {
+        height: 48px;
+
+        button {
+            width: 75px;
+        }
+
+        span {
+            flex: 1;
+        }
+    }
+
+    .signature-text {
+        padding-bottom: 0;
     }
 }
