@@ -479,3 +479,34 @@ body {
     width: 16px;
     height: 16px;
 }
+
+
+/*Media Queries*/
+
+/*Tablet*/
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 40px;
+        position: absolute;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero {
+        height: 500px;
+        padding-top: 100px;
+    }
+
+    .favourites {
+        gap: 100px;
+        padding: 80px 120px;
+    }
+
+}
