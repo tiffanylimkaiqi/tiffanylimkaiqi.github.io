@@ -63,3 +63,54 @@ body {
 .hamburger-menu {
     display: none;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.544)), url("../images/order-online.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 70px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0px;
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .line {
+        position: absolute;
+        top: 50%;
+        width: 100px;
+        border-bottom: 1px solid wheat;
+    }
+
+    .line-left {
+        right: 100%;
+        margin-right: 20px;
+    }
+
+    .line-right {
+        left: 100%;
+        margin-left: 20px;
+    }
+}
