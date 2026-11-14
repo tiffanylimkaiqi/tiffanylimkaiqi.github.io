@@ -240,7 +240,7 @@ body {
     }
 }
 
-.signature-press {
+.press {
     display: flex;
     margin-top: 26px;
     gap: 24px;
@@ -291,4 +291,100 @@ body {
     background-color: transparent;
     border-color: white;
     color: white;
+}
+
+.house-favourite {
+    background-color: white;
+    padding: 135px 145px;
+}
+
+.house-card {
+    display: flex;
+    background-color: black;
+    color: white;
+
+    img {
+        display: block;
+        object-fit: cover;
+        object-position: left;
+        width: 45%;
+    }
+}
+
+.house-info {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 0px 120px;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 50px;
+        margin: 0px 0px 60px;
+    }
+
+    h3 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        margin: 0;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        margin: 0;
+    }
+}
+
+.sushi {
+    padding: 80px 140px;
+    color: white;
+    text-align: left;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 31px;
+        margin: 10px 0px 0px;
+    }
+
+    h3 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0px;
+        font-size: 17px;
+        text-align: left;
+    }
+}
+
+.sushi-container {
+    display: flex;
+    margin-top: 35px;
+    gap: 20px;
+}
+
+.sushi-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #333333;
+    color: white;
+
+    img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 4/3;
+        background-position: center;
+    }
+
+    .press {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
