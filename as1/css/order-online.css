@@ -244,12 +244,14 @@ body {
     margin-top: 26px;
     gap: 24px;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .quantity {
     display: flex;
     border: 1px solid #a1a1a1;
     color: white;
+    height: 48px;
 
     button {
         width: 48px;
@@ -301,6 +303,7 @@ body {
     display: flex;
     background-color: black;
     color: white;
+    min-width: 0;
 
     img {
         display: block;
@@ -373,6 +376,7 @@ body {
     flex-direction: column;
     background-color: #333333;
     color: white;
+    min-width: 0;
 
     img {
         display: block;
@@ -507,6 +511,140 @@ body {
     .favourites {
         gap: 100px;
         padding: 80px 120px;
+    }
+
+    .signature {
+        padding: 35px 80px 100px;
+    }
+
+    .signature-container {
+        gap: 20px;
+    }
+
+    .signature-text {
+        p {
+            margin: 0 0 10px;
+        }
+    }
+
+    .press {
+        flex-direction: column;
+    }
+
+    .quantity {
+        button {
+            width: 55px;
+        }
+
+        span {
+            flex: 1;
+        }
+    }
+
+    .house-favourite {
+        background-color: black;
+        padding: 100px 80px 140px;
+        align-items: center;
+    }
+
+    .house-card {
+        flex-direction: column;
+        height: auto;
+
+        img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-position: center;
+        }
+    }
+
+    .house-info {
+        padding-top: 40px;
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin: 25px 0;
+        }
+
+        .press {
+            flex-direction: row;
+            justify-content: space-between
+        }
+
+        .quantity {
+            span {
+                width: 90px;
+                min-width: 0;
+
+            }
+
+            button {
+                width: 90px;
+                min-width: 0;
+
+            }
+        }
+
+        .btn {
+            width: 250px;
+            min-width: 0;
+
+        }
+    }
+
+    .sushi {
+        padding: 140px 80px;
+    }
+
+    .sushi-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 60px;
+
+        .sushi-card {
+            flex: none;
+            width: 48%;
+        }
+
+        .signature-text {
+            p {
+                margin: 20px 0;
+            }
+        }
+
+        .price {
+            margin-bottom: 10px;
+        }
+    }
+
+    .checkout {
+        padding: 100px 300px;
+    }
+
+    .footer {
+        padding: 130px 150px;
+    }
+
+    .footer img {
+        width: 100%;
+        height: auto;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
     }
 
 }
