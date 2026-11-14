@@ -101,7 +101,7 @@ body {
         position: absolute;
         top: 50%;
         width: 100px;
-        border-bottom: 1px solid wheat;
+        border-bottom: 1px solid white;
     }
 
     .line-left {
@@ -112,5 +112,50 @@ body {
     .line-right {
         left: 100%;
         margin-left: 20px;
+    }
+}
+
+.favourites {
+    background-color: white;
+    display: flex;
+    padding: 80px 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+    h2 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 31px;
+        text-align: left;
+        margin: 15px 0 30px;
+    }
+
+    h3 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-size: 19px;
+        max-width: 410px;
+        text-align: left;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 20px 50px;
+        border: 1px solid #A1A1A1;
     }
 }
