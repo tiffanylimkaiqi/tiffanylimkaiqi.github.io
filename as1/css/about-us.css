@@ -322,6 +322,7 @@ body {
     }
 
     .hero-img {
+        background-image: url("../images/aboutus-hero.png");
         flex: none;
         aspect-ratio: 4/3;
     }
@@ -415,4 +416,63 @@ body {
         width: 20px;
         height: 20px;
     }
+}
+
+@media (max-width: 640px) {
+
+    .hamburger-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-content {
+        padding: 80px 95px;
+    }
+
+    .culinary {
+        padding: 35px 0;
+
+        h1 {
+            font-size: 84px;
+            margin: 0 90px 20px;
+        }
+
+        p {
+            margin: 30px 50px;
+        }
+    }
+
+    .culinary-img {
+        .culinary-2 {
+            display: none;
+        }
+    }
+
+    .commitment-info {
+        padding: 95px 65px;
+    }
+
+    .achivement {
+        h1 {
+            margin: 40px 0;
+        }
+
+        p {
+            margin: 0 35px;
+        }
+    }
+
+    .awards {
+        gap: 45px;
+    }
+
+    .footer {
+        padding: 40px 45px 100px 45px;
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
 }
