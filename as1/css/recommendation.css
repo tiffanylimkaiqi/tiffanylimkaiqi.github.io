@@ -72,7 +72,7 @@ body {
     background-image: url("../images/recommendation.png");
     background-size: cover;
     background-position: center;
-    padding: 100px 300px;
+    padding: 100px 0;
     color: white;
 
     h1 {
@@ -194,7 +194,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.418)), url("../images/dessert-banner.png");
     background-size: cover;
     background-position: center;
-    padding: 100px 300px;
+    padding: 100px 0;
     color: white;
 
     h1 {
@@ -445,7 +445,63 @@ body {
         height: 40px;
     }
 
-    .banner {
-        padding: 40px 50px;
+    .recommendation {
+        padding: 110px 0;
+    }
+
+    .recommendation-card {
+        h2 {
+            right: 0;
+            left: 0;
+            text-align: center;
+        }
+
+    }
+
+    .main-list {
+
+        padding: 0 40px;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .menu-item {
+        p {
+            margin: 10px 10px 10px 0;
+        }
+    }
+
+    .dessert {
+        padding: 100px 45px;
+        gap: 80px;
+    }
+
+    .dessert-card {
+        flex-direction: column;
+    }
+
+    .cocktails {
+        padding: 100px 50px;
+
+        h1 {
+            font-size: 84px;
+            width: 300px;
+            min-width: 0;
+        }
+
+        p {
+            width: 400px;
+        }
+
+        .footer {
+            padding: 40px 45px 100px 45px;
+
+            p {
+                padding-bottom: 30px;
+            }
+        }
+
     }
 }
