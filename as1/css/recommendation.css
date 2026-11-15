@@ -247,3 +247,54 @@ body {
     flex-direction: column-reverse;
     margin-top: 160px;
 }
+
+.cocktails {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.571)), url("../images/best-coctails.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 180px 140px;
+    text-align: left;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 95px;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        width: 505px;
+        min-width: 0;
+        margin: 0;
+    }
+
+    button {
+        color: white;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 20px 24px;
+        background-color: transparent;
+        border: 1px solid white;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+
+    .line {
+        border-bottom: 1px solid white;
+        width: 80px;
+        margin: 80px 0 35px;
+    }
+}
