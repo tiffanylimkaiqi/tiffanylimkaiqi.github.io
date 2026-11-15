@@ -205,3 +205,45 @@ body {
         width: auto;
     }
 }
+
+.dessert {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 120px;
+}
+
+.dessert-card {
+    flex: 1;
+    min-width: 0;
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 5/7;
+        object-fit: cover;
+    }
+}
+
+.dessert-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+.dessert-flipped {
+    flex-direction: column-reverse;
+    margin-top: 160px;
+}
