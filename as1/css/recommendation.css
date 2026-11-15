@@ -186,3 +186,22 @@ body {
     font-size: 15px;
     color: black;
 }
+
+.dessert-banner {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.418)), url("../images/dessert-banner.png");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 300px;
+    color: white;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 95px;
+        margin: 0;
+        width: auto;
+    }
+}
