@@ -169,3 +169,36 @@ body {
         object-position: center;
     }
 }
+
+.commitment {
+    display: flex;
+
+    img {
+        display: block;
+        flex: 1;
+        min-width: 0;
+        object-fit: cover;
+    }
+}
+
+.commitment-info {
+    flex: 1;
+    padding: 200px 80px;
+    color: wheat;
+
+    h2 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 70px;
+        text-align: left;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        text-align: left;
+        width: 370px;
+        min-width: 0;
+    }
+}
