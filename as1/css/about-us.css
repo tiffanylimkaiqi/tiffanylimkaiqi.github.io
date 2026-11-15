@@ -132,3 +132,40 @@ body {
         margin-left: 80px;
     }
 }
+
+.culinary {
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0px 60px;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 95px;
+        margin: 0 0 40px;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        max-width: 1035px;
+        min-width: 0;
+        margin: 40px auto;
+    }
+}
+
+.culinary-img {
+    display: flex;
+    gap: 8px;
+
+    img {
+        display: block;
+        flex: 1;
+        aspect-ratio: 3/2;
+        min-width: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+}
