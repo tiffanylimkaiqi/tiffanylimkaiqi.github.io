@@ -298,3 +298,154 @@ body {
         margin: 80px 0 35px;
     }
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.275), rgba(18, 18, 18, 0.275)), url('../images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding: 150px 130px;
+
+    p {
+        font-family: "Lora", serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 19px;
+        color: white;
+        max-width: 550px;
+        text-align: center;
+        max-width: 700px;
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+/*Media Query*/
+
+/*Tablet*/
+@media (max-width:1024px) {
+    .header {
+        padding: 20px 40px;
+        position: relative;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .recommendation {
+        flex-direction: column;
+        padding: 120px 85px 100px;
+        gap: 85px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .main-list {
+
+        padding-bottom: 50px;
+
+        h1 {
+            margin: 40px 0;
+        }
+    }
+
+    .dessert {
+        flex-direction: column;
+        gap: 120px;
+        padding: 120px 100px;
+    }
+
+    .dessert-card {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column-reverse;
+
+        img {
+            aspect-ratio: 3/3;
+        }
+    }
+
+    .dessert-flipped {
+        margin-top: auto;
+    }
+
+    .cocktails {
+        padding: 180px 80px;
+    }
+
+    .footer {
+        padding: 130px 150px;
+    }
+
+    .footer img {
+        width: 100%;
+        height: auto;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+/*Phone*/
+@media (max-width: 640px) {
+    .header {
+        background-color: black;
+    }
+
+    .hamburger-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .banner {
+        padding: 40px 50px;
+    }
+}
