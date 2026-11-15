@@ -648,3 +648,124 @@ body {
     }
 
 }
+
+/*Phhone*/
+@media (max-width: 640px) {
+
+    .header {
+        background-color: black;
+    }
+
+    .hamburger-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero {
+        height: 430px;
+    }
+
+    .favourites {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 40px;
+        gap: 60px;
+    }
+
+    .signature {
+        padding: 60px 30px;
+    }
+
+    .signature-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .signature-card {
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .press {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .btn {
+            font-size: 11px;
+        }
+    }
+
+    .house-favourite {
+        background-color: white;
+        padding: 45px 40px;
+    }
+
+    .house-info {
+        padding: 40px 80px 100px;
+
+        p {
+            margin: 30px 0px;
+        }
+
+        .press {
+            align-items: stretch;
+            flex-direction: row;
+        }
+
+        .quantity {
+            button {
+                width: 55px;
+            }
+
+            span {
+                width: 55px;
+            }
+        }
+
+        .btn {
+            width: 190px;
+        }
+    }
+
+    .sushi {
+        padding: 45px 40px;
+    }
+
+    .sushi-container {
+        flex-direction: column;
+        flex: 1;
+
+        .sushi-card {
+            width: 100%;
+
+            img {
+                aspect-ratio: 3/2;
+            }
+        }
+
+        .signature-text,
+        .press {
+            padding: 20px 70px;
+        }
+    }
+
+    .checkout {
+        padding: 80px 90px;
+    }
+
+    .footer {
+        padding: 40px 45px 100px 45px;
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
+}
