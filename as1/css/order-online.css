@@ -487,6 +487,78 @@ body {
 
 /*Media Queries*/
 
+/*In-between*/
+@media (max-width: 1380px) {
+    .house-favourite {
+        padding: 100px 80px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .house-info {
+        padding: 0px 80px;
+
+        .quantity {
+            button {
+                width: 40px;
+            }
+
+            span {
+                width: 40px;
+            }
+        }
+
+        .btn {
+            font-size: 14px;
+            padding: 10px 30px;
+        }
+    }
+
+    .signature {
+        padding: 80px 100px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .signature-card {
+        display: flex;
+        flex-direction: column;
+
+        .press {
+            flex-direction: column;
+            margin-top: auto;
+            padding-top: 10px;
+        }
+
+        .quantity {
+            button {
+                width: 55px;
+            }
+
+            span {
+                flex: 1;
+            }
+        }
+
+        .signature-text {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+    }
+
+    .sushi {
+        padding: 80px 80px;
+    }
+
+    .checkout {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+
+
 /*Tablet*/
 @media (max-width: 1024px) {
 
@@ -647,6 +719,50 @@ body {
         height: 20px;
     }
 
+}
+
+/*in between*/
+
+@media (max-width: 900px) {
+
+    .house-info {
+        padding: 40px 50px;
+
+        .press {
+            .quantity {
+
+                button,
+                span {
+                    width: 55px;
+                }
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px 15px;
+                width: 190px;
+            }
+        }
+    }
+
+
+
+    .checkout {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .favourites {
+        padding: 80px 60px;
+    }
+
+    .sushi {
+        padding: 120px 40px;
+    }
 }
 
 /*Phhone*/
