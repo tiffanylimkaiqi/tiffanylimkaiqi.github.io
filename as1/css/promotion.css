@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+    margin: 0px;
+    gap: 0px;
+    padding: 0px;
+}
+
+.logo {
+
+    display: flex;
+    gap: 18px;
+
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-family: "Bebas Neue", cursive;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+        align-self: center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+
+.header {
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: black;
+}
+
+.nav {
+    font-family: "Work Sans", sans-serif;
+    margin: auto;
+    margin-right: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #A1A1A1;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-img {
+    flex: 1;
+    width: 50%;
+    background-image: url("../images/best-coctails.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    padding: 110px;
+    text-align: left;
+    align-items: left;
+    color: white;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 95px;
+        margin: 0;
+        width: 490px;
+        min-width: 0;
+    }
+
+    h2 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        width: 410px;
+    }
+
+    button {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15;
+        border: 1px solid white;
+        padding: 8px 15px;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: white;
+        margin-top: 45px;
+    }
+}
+
+.seasonal {
+    background-color: white;
+    text-align: center;
+    padding: ;
+}
