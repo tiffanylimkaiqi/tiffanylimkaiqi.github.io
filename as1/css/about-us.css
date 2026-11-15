@@ -185,20 +185,114 @@ body {
     flex: 1;
     padding: 200px 80px;
     color: wheat;
+    text-align: left;
 
     h2 {
         font-family: "Bebas Neue", cursive;
         font-weight: 400;
         font-size: 70px;
-        text-align: left;
     }
 
     p {
         font-family: "Lora", serif;
         font-weight: 400;
         font-size: 19px;
-        text-align: left;
         width: 370px;
         min-width: 0;
     }
+}
+
+.achivement {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0.737)), url("../images/achivements.png");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding-bottom: 190px;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 70px;
+        margin: 150px auto 45px;
+    }
+
+    p {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        min-width: 0;
+        max-width: 900px;
+        margin: 0 auto 40px;
+    }
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 140px;
+    gap: 100px;
+}
+
+.award-card {
+    h3 {
+        display: inline-block;
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 56px;
+        margin-bottom: 20px;
+        padding: 0 12px 10px;
+        border-bottom: 1px solid white;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+        height: 300px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.275), rgba(18, 18, 18, 0.275)), url('../images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding: 150px 130px;
+
+    p {
+        font-family: "Lora", serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 19px;
+        color: white;
+        max-width: 550px;
+        text-align: center;
+        max-width: 700px;
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social-icon img {
+    width: 16px;
+    height: 16px;
 }
