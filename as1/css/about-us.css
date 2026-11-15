@@ -327,10 +327,10 @@ body {
     }
 
     .hero-content {
-        padding: 120px;
+        padding: 120px 200px;
 
         p {
-            width: 575px;
+            width: auto;
             margin-top: 40px;
         }
     }
@@ -348,5 +348,71 @@ body {
     .culinary-img {
         gap: 0;
         aspect-ratio: 4/2;
+    }
+
+    .commitment {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.615)), url("../images/commitment-1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-direction: column;
+
+        img {
+            display: none;
+        }
+    }
+
+    .commitment-info {
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        padding: 200px 150px;
+
+        p {
+            width: auto;
+            min-width: 0;
+        }
+    }
+
+    .achivement {
+
+        background-position: center;
+        filter: grayscale(1);
+
+        h1 {
+            margin: 130px 0 40px;
+        }
+
+        p {
+            margin: 0 175px;
+        }
+    }
+
+    .awards {
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    .footer {
+        padding: 130px 150px;
+    }
+
+    .footer img {
+        width: 100%;
+        height: auto;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
     }
 }
