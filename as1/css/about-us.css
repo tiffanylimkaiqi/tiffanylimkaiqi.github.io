@@ -299,6 +299,24 @@ body {
 
 
 /*Media Query*/
+@media (max-width:1300px) {
+    .hero-content {
+        padding: 150px 80px;
+    }
+
+    .culinary {
+        p {
+            max-width: 935px;
+            min-width: 0;
+        }
+    }
+
+    .commitment-info {
+        padding: 80px 40px;
+
+    }
+}
+
 /*Tablet*/
 
 @media (max-width: 1024px) {
@@ -417,6 +435,7 @@ body {
         height: 20px;
     }
 }
+
 
 @media (max-width: 640px) {
 
