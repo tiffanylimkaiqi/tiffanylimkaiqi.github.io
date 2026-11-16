@@ -187,3 +187,35 @@ body {
 
     }
 }
+
+.evening-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.59)), url("../images/evening-banner.png");
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    padding: 140px 0;
+    color: white;
+
+    h1 {
+        font-family: "Bebas Neue", cursive;
+        font-weight: 400;
+        font-size: 70px;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    p {
+        text-align: center;
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 19px;
+        width: 815px;
+        min-width: 0;
+        margin: auto;
+    }
+}
