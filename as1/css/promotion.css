@@ -149,6 +149,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 60px;
+    align-items: stretch;
 }
 
 .seasonal-card {
@@ -160,6 +161,7 @@ body {
         object-fit: cover;
         aspect-ratio: 3/4;
         border-radius: 200px;
+        object-position: center;
     }
 
     h3 {
