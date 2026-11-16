@@ -1,0 +1,252 @@
+.hero {
+    display: flex;
+    background-color: var(--black);
+}
+
+.hero-content {
+    flex: 1;
+    align-self: center;
+    margin: 0px 80px;
+    color: var(--white);
+
+    h1 {
+        margin: 25px 0px;
+    }
+
+    p {
+        max-width: 520px;
+    }
+}
+
+.hero-img {
+    flex: 1.5;
+    height: 700px;
+    background-image: url('../images/home.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+/* ---------- Popular ---------- */
+.popular {
+    background-color: var(--white);
+    text-align: center;
+    padding: 130px 130px 50px;
+
+    h2 {
+        margin: 20px 0px 30px;
+    }
+
+    p {
+        max-width: 640px;
+        margin: 0px auto;
+    }
+}
+
+/* ---------- Cards ---------- */
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-color: var(--white);
+    padding: 10px 40px 80px;
+}
+
+.card,
+.card-main {
+    min-width: 0;
+    text-align: center;
+
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h4 {
+        margin-top: 30px;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+
+    img {
+        aspect-ratio: 3/4;
+    }
+}
+
+.card-main {
+    flex: 1.5;
+    max-width: 400px;
+
+    img {
+        aspect-ratio: 4/6;
+    }
+}
+
+.atmosphere {
+    aspect-ratio: 16/9;
+    padding: 150px 130px;
+    color: var(--white);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/atmosphere.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        max-width: 550px;
+    }
+
+    /* the photo in the HTML is only used on mobile */
+    img {
+        display: none;
+    }
+}
+
+/*Media Queries*/
+
+/* In-Between */
+@media (max-width: 1240px) {
+
+    .hero-content {
+        margin: 0px 50px;
+    }
+
+    .popular {
+        padding: 100px 40px 50px;
+    }
+
+    .cards-container {
+        gap: 30px;
+    }
+
+    .atmosphere {
+        aspect-ratio: auto;
+        padding: 150px 80px;
+    }
+}
+
+/*Tablets */
+@media (max-width: 1024px) {
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-img {
+        flex: none;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+
+    .hero-content {
+        margin: 70px 150px;
+
+        h1 {
+            margin: 20px 0px;
+        }
+
+        p {
+            max-width: 400px;
+        }
+    }
+
+    .popular {
+        padding: 90px 200px 40px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        padding: 0px 0px 50px;
+    }
+
+    .card,
+    .card-main {
+        flex: none;
+        max-width: 100%;
+        padding-bottom: 50px;
+
+        img {
+            aspect-ratio: 6/4;
+        }
+    }
+
+    .card-main {
+        order: -1;
+
+        /* same size as the other card names on tablet */
+        h4 {
+            font-size: var(--h4-size);
+            line-height: var(--h4-line);
+        }
+    }
+
+    .atmosphere {
+        padding: 180px 80px;
+    }
+}
+
+/*Mobile */
+@media (max-width: 640px) {
+
+    .hero-content {
+        margin: 60px 40px;
+    }
+
+    .popular {
+        padding: 60px 40px;
+    }
+
+
+    .popular .section-title span {
+        display: block;
+    }
+
+    .card,
+    .card-main {
+        padding-bottom: 60px;
+
+        img {
+            aspect-ratio: 1/1;
+        }
+    }
+
+    .atmosphere {
+        text-align: center;
+        background-image: none;
+        background-color: var(--black);
+        padding: 0px 0px 50px;
+
+        img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0px 0px 24px;
+            padding: 0px 24px;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0px auto;
+            padding: 0px 24px;
+        }
+    }
+}

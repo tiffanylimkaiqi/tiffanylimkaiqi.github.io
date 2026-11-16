@@ -1,184 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-    background-color: black;
-    margin: 0px;
-    gap: 0px;
-    padding: 0px;
-}
-
-.logo {
-
-    display: flex;
-    gap: 18px;
-
-    align-items: center;
-    justify-content: center;
-
-    span {
-        font-family: "Bebas Neue", cursive;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 40px;
-        text-transform: uppercase;
-        color: white;
-        align-self: center;
-    }
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    gap: 0px;
-}
-
-.header {
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 80px;
-}
-
-.nav {
-    font-family: "Work Sans", sans-serif;
-    margin: auto;
-    margin-right: 0px;
-    display: flex;
-    gap: 20px;
-}
-
-.nav a {
-    color: #A1A1A1;
-    text-decoration: none;
-}
-
-.hamburger-menu {
-    display: none;
-}
-
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.544)), url("../images/order-online.jpg");
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.54)), url("../images/order-online.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 900px;
 }
 
 .hero-content {
     text-align: center;
-    color: white;
+    color: var(--white);
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 70px;
-        margin: 0;
         margin-top: 20px;
-    }
-
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0px;
-        font-size: 17px;
-        position: relative;
-        display: inline-block;
-    }
-
-    .line {
-        position: absolute;
-        top: 50%;
-        width: 100px;
-        border-bottom: 1px solid white;
-    }
-
-    .line-left {
-        right: 100%;
-        margin-right: 20px;
-    }
-
-    .line-right {
-        left: 100%;
-        margin-left: 20px;
     }
 }
 
 .favourites {
-    background-color: white;
     display: flex;
-    padding: 80px 200px;
     align-items: center;
-    text-align: center;
     justify-content: space-between;
+    gap: 40px;
+    background-color: var(--white);
+    padding: 80px 200px;
 
     h2 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 31px;
-        text-align: left;
-        margin: 15px 0 30px;
-    }
-
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0px;
-        font-size: 17px;
-        text-align: left;
+        margin: 15px 0px 30px;
     }
 
     p {
-        font-family: "Lora", serif;
-        font-size: 19px;
         max-width: 410px;
-        text-align: left;
     }
 
-    button {
-        background-color: white;
-        color: black;
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        padding: 20px 50px;
-        border: 1px solid #A1A1A1;
+    .btn {
+        white-space: nowrap;
     }
+}
+
+
+.price {
+    color: var(--gold);
+}
+
+
+.press {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 26px;
+}
+
+.quantity {
+    display: flex;
+    height: 48px;
+    border: 1px solid var(--grey);
+    color: var(--white);
+
+    button {
+        width: 48px;
+        background-color: transparent;
+        border: none;
+        color: var(--white);
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        border-left: 1px solid var(--grey);
+        border-right: 1px solid var(--grey);
+        font-family: var(--font-ui);
+        font-size: 19px;
+    }
+}
+
+.signature-card .btn.gold:hover,
+.sushi-card .btn.gold:hover,
+.checkout .btn.gold:hover {
+    color: var(--white);
+    border-color: var(--white) transparent;
 }
 
 .signature {
     padding: 80px 140px;
-    color: white;
-    text-align: left;
+    color: var(--white);
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 31px;
-        margin: 10px 0px 0px;
-    }
-
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0px;
-        font-size: 17px;
-        text-align: left;
+        margin-top: 10px;
     }
 }
 
@@ -189,213 +102,121 @@ body {
 }
 
 .signature-card {
-    display: flex;
     flex: 1;
+    min-width: 0;
+    display: flex;
     flex-direction: column;
-    background-color: #333333;
-    color: white;
+    background-color: var(--charcoal);
+    color: var(--white);
 
     img {
         display: block;
-        object-fit: cover;
         width: 100%;
-        aspect-ratio: 3/3;
-        background-position: center;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .press {
+        margin-top: auto;
+        padding-top: 26px;
     }
 }
 
 .signature-text {
-
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 35px 30px;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 31px;
-        margin: 10px 0px 0px;
-    }
-
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0px;
-        font-size: 17px;
-        text-align: left;
+        margin: 10px 0px;
     }
 
     p {
-        font-family: "Lora", serif;
-        font-size: 19px;
-        font-weight: 400;
-        text-align: left;
         max-width: 410px;
+        margin-bottom: 10px;
     }
-}
-
-.price {
-    font-family: "Work-Sans", sans-serif;
-    font-size: 17px;
-    color: #BDA16B;
-}
-
-.press {
-    display: flex;
-    margin-top: 26px;
-    gap: 24px;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.quantity {
-    display: flex;
-    border: 1px solid #a1a1a1;
-    color: white;
-    height: 48px;
-
-    button {
-        width: 48px;
-        background-color: transparent;
-        border: none;
-        color: white;
-        font-size: 19px;
-    }
-
-    span {
-        font-family: "Work Sans", sans-serif;
-        font-size: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        border-left: 1px solid #a1a1a1;
-        border-right: 1px solid #a1a1a1;
-    }
-}
-
-.btn {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 15px 35px;
-    border: 1px solid transparent;
-}
-
-.gold {
-    background-color: #BDA16B;
-    color: white;
-}
-
-.outline-white {
-    background-color: transparent;
-    border-color: white;
-    color: white;
 }
 
 .house-favourite {
-    background-color: white;
+    background-color: var(--white);
     padding: 135px 145px;
 }
 
 .house-card {
     display: flex;
-    background-color: black;
-    color: white;
-    min-width: 0;
+    height: 460px;
+    background-color: var(--black);
+    color: var(--white);
 
     img {
         display: block;
+        width: 45%;
+        height: 100%;
         object-fit: cover;
         object-position: left;
-        width: 45%;
     }
 }
 
 .house-info {
-    flex-direction: column;
+    flex: 1;
+    min-width: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: left;
     padding: 0px 120px;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 50px;
-        margin: 0px 0px 60px;
+        margin: 5px 0px 30px;
     }
 
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        font-size: 17px;
-        margin: 0;
-    }
-
-    p {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 19px;
-        margin: 0;
+    .press {
+        flex-wrap: nowrap;
     }
 }
 
 .sushi {
     padding: 80px 140px;
-    color: white;
-    text-align: left;
+    color: var(--white);
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 31px;
-        margin: 10px 0px 0px;
-    }
-
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0px;
-        font-size: 17px;
-        text-align: left;
+        margin-top: 10px;
     }
 }
 
 .sushi-container {
     display: flex;
-    margin-top: 35px;
     gap: 20px;
+    margin-top: 35px;
 }
 
 .sushi-card {
-    display: flex;
     flex: 1;
-    flex-direction: column;
-    background-color: #333333;
-    color: white;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--charcoal);
+    color: var(--white);
 
     img {
         display: block;
-        object-fit: cover;
         width: 100%;
         aspect-ratio: 4/3;
-        background-position: center;
+        object-fit: cover;
+    }
+
+    .signature-text {
+        padding-bottom: 0px;
     }
 
     .press {
         flex-direction: column;
         gap: 10px;
-        padding: 0px 30px 30px;
-        margin-top: 10px;
+        margin-top: auto;
+        padding: 20px 30px 30px;
     }
 
     .quantity {
-        height: 48px;
-
         button {
             width: 75px;
         }
@@ -404,90 +225,26 @@ body {
             flex: 1;
         }
     }
-
-    .signature-text {
-        padding-bottom: 0;
-    }
 }
 
 .checkout {
-    background-color: black;
+    background-color: var(--black);
+    color: var(--white);
     text-align: center;
-    padding: 60px 400px 200px;
-    color: white;
-
-    p {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 19px;
-        margin-bottom: 30px;
-    }
+    padding: 60px 40px 200px;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 31px;
-        margin-bottom: 20px;
-
+        margin: 15px 0px 20px;
     }
-
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        font-size: 17px;
-        text-transform: uppercase;
-    }
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(2, 2, 2, 0.275), rgba(18, 18, 18, 0.275)), url('../images/footer.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-    padding: 150px 130px;
 
     p {
-        font-family: "Lora", serif;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 19px;
-        color: white;
-        max-width: 550px;
-        text-align: center;
-        max-width: 700px;
+        margin-bottom: 30px;
     }
 }
-
-.socials {
-    display: flex;
-    gap: 12px;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    background: white;
-    border-radius: 50%;
-}
-
-.social-icon img {
-    width: 16px;
-    height: 16px;
-}
-
 
 /*Media Queries*/
 
-/*In-between*/
+/* In-between */
 @media (max-width: 1380px) {
     .house-favourite {
         padding: 100px 80px;
@@ -499,17 +256,14 @@ body {
         padding: 0px 80px;
 
         .quantity {
-            button {
-                width: 40px;
-            }
 
+            button,
             span {
                 width: 40px;
             }
         }
 
         .btn {
-            font-size: 14px;
             padding: 10px 30px;
         }
     }
@@ -521,13 +275,8 @@ body {
 
 @media (max-width: 1140px) {
     .signature-card {
-        display: flex;
-        flex-direction: column;
-
         .press {
             flex-direction: column;
-            margin-top: auto;
-            padding-top: 10px;
         }
 
         .quantity {
@@ -539,45 +288,18 @@ body {
                 flex: 1;
             }
         }
-
-        .signature-text {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-        }
     }
 
     .sushi {
-        padding: 80px 80px;
-    }
-
-    .checkout {
-        padding-left: 300px;
-        padding-right: 300px;
+        padding: 80px;
     }
 }
 
-
-
-/*Tablet*/
+/* Tablet */
 @media (max-width: 1024px) {
 
-    .header {
-        padding: 20px 40px;
-        position: absolute;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
     .hero {
-        height: 500px;
-        padding-top: 100px;
+        height: 400px;
     }
 
     .favourites {
@@ -591,12 +313,6 @@ body {
 
     .signature-container {
         gap: 20px;
-    }
-
-    .signature-text {
-        p {
-            margin: 0 0 10px;
-        }
     }
 
     .press {
@@ -614,9 +330,8 @@ body {
     }
 
     .house-favourite {
-        background-color: black;
+        background-color: var(--black);
         padding: 100px 80px 140px;
-        align-items: center;
     }
 
     .house-card {
@@ -625,45 +340,41 @@ body {
 
         img {
             width: 100%;
+            height: auto;
             aspect-ratio: 4/3;
             object-position: center;
         }
     }
 
     .house-info {
-        padding-top: 40px;
+        padding: 40px 80px 0px;
 
         h1 {
-            margin: 0;
+            margin: 5px 0px 0px;
         }
 
         p {
-            margin: 25px 0;
+            margin: 25px 0px;
         }
 
         .press {
             flex-direction: row;
-            justify-content: space-between
+            justify-content: space-between;
+            margin-top: 0px;
         }
 
         .quantity {
+
+            button,
             span {
                 width: 90px;
                 min-width: 0;
-
-            }
-
-            button {
-                width: 90px;
-                min-width: 0;
-
             }
         }
 
         .btn {
             width: 250px;
             min-width: 0;
-
         }
     }
 
@@ -681,10 +392,8 @@ body {
             width: 48%;
         }
 
-        .signature-text {
-            p {
-                margin: 20px 0;
-            }
+        .signature-text p {
+            margin: 20px 0px;
         }
 
         .price {
@@ -693,35 +402,9 @@ body {
     }
 
     .checkout {
-        padding: 100px 300px;
+        padding: 100px 40px;
     }
-
-    .footer {
-        padding: 130px 150px;
-    }
-
-    .footer img {
-        width: 100%;
-        height: auto;
-    }
-
-    .socials {
-        justify-content: center;
-    }
-
-    .social-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .social-icon img {
-        width: 20px;
-        height: 20px;
-    }
-
 }
-
-/*in between*/
 
 @media (max-width: 900px) {
 
@@ -738,20 +421,11 @@ body {
             }
 
             .btn {
-                font-size: 14px;
                 padding: 10px 15px;
                 width: 190px;
             }
         }
     }
-
-
-
-    .checkout {
-        padding-left: 150px;
-        padding-right: 150px;
-    }
-
 }
 
 @media (max-width: 800px) {
@@ -765,28 +439,22 @@ body {
     }
 }
 
-/*Phhone*/
+/* Phone */
 @media (max-width: 640px) {
 
-    .header {
-        background-color: black;
-    }
-
-    .hamburger-menu {
-        display: block;
-        width: 40px;
-        height: 40px;
-    }
-
     .hero {
-        height: 430px;
+        height: 330px;
+    }
+
+    .hero-content .line {
+        width: 40px;
     }
 
     .favourites {
         flex-direction: column;
         align-items: flex-start;
-        padding: 80px 40px;
-        gap: 60px;
+        gap: 40px;
+        padding: 60px 30px;
     }
 
     .signature {
@@ -799,64 +467,68 @@ body {
     }
 
     .signature-card {
-
-        h1 {
-            margin: 20px 0;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
         .press {
             flex-direction: row;
-            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .quantity {
+
+            button,
+            span {
+                flex: none;
+                width: 36px;
+            }
         }
 
         .btn {
+            flex: 1;
+            padding: 12px 6px;
             font-size: 11px;
+            letter-spacing: 0px;
+            white-space: nowrap;
         }
     }
 
     .house-favourite {
-        background-color: white;
-        padding: 45px 40px;
+        background-color: var(--white);
+        padding: 45px 30px;
     }
 
     .house-info {
-        padding: 40px 80px 100px;
+        padding: 30px 30px 40px;
 
         p {
-            margin: 30px 0px;
+            margin: 20px 0px 30px;
         }
 
         .press {
-            align-items: stretch;
-            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: flex-start;
         }
 
         .quantity {
-            button {
-                width: 55px;
-            }
 
+            button,
             span {
-                width: 55px;
+                width: 40px;
             }
         }
 
         .btn {
-            width: 190px;
+            width: auto;
+            padding: 12px 18px;
+            white-space: nowrap;
         }
     }
 
     .sushi {
-        padding: 45px 40px;
+        padding: 45px 30px;
     }
 
     .sushi-container {
         flex-direction: column;
-        flex: 1;
 
         .sushi-card {
             width: 100%;
@@ -865,23 +537,9 @@ body {
                 aspect-ratio: 3/2;
             }
         }
-
-        .signature-text,
-        .press {
-            padding: 20px 70px;
-        }
     }
 
     .checkout {
-        padding: 80px 90px;
+        padding: 60px 30px 80px;
     }
-
-    .footer {
-        padding: 40px 45px 100px 45px;
-
-        p {
-            padding-bottom: 30px;
-        }
-    }
-
 }

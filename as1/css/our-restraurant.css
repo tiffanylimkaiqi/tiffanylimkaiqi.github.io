@@ -1,109 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-    background-color: white;
-    margin: 0px;
-    gap: 0px;
-    padding: 0px;
-}
-
-.logo {
-
-    display: flex;
-    gap: 18px;
-
-    align-items: center;
-    justify-content: center;
-
-    span {
-        font-family: "Bebas Neue", cursive;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 40px;
-        text-transform: uppercase;
-        color: white;
-        align-self: center;
-    }
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    gap: 0px;
-}
-
-.header {
-    background-color: #000000bb;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 80px;
-}
-
-.nav {
-    font-family: "Work Sans", sans-serif;
-    margin: auto;
-    margin-right: 0px;
-    display: flex;
-    gap: 20px;
-}
-
-.nav a {
-    color: #A1A1A1;
-    text-decoration: none;
-}
-
-.hamburger-menu {
-    display: none;
-}
-
 .hero {
-    background-color: black;
     display: flex;
+    background-color: var(--black);
 }
 
 .hero-content {
     flex: 1;
-    margin: 60px 80px 0;
     align-self: center;
-    color: white;
-
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 15px;
-        text-transform: uppercase;
-        margin: 0;
-    }
+    margin: 0px 80px;
+    color: var(--white);
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 95px;
-        text-transform: uppercase;
-        margin: 30px auto;
-
         max-width: 490px;
-    }
-
-    p {
-        font-family: "Lora", serif;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 19px;
+        margin: 30px 0px;
     }
 }
-
 
 .hero-img {
     flex: 1.5;
@@ -114,218 +24,131 @@ body {
 }
 
 .elegance {
-    background-color: white;
+    background-color: var(--white);
     text-align: center;
-    padding: 80px 120px;
-    padding-bottom: 0;
+    padding: 80px 120px 0px;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        text-decoration: none;
-        font-size: 95px;
-        font-weight: 400;
+        margin-bottom: 50px;
     }
 }
 
 .cards-container {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
-    padding-bottom: 80px;
-    padding-top: 10px;
-    margin: 0;
+    padding: 10px 0px 80px;
+}
+
+.card,
+.card-main {
+    display: block;
+    min-width: 0;
+    aspect-ratio: 4/5;
+    object-fit: cover;
 }
 
 .card {
     flex: 1;
-    flex-direction: column;
     max-width: 300px;
-    min-width: 0;
-    align-items: center;
-    text-align: center;
-    aspect-ratio: 4/5;
-}
-
-.card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 4/5;
 }
 
 .card-main {
     flex: 1.5;
     max-width: 420px;
-    min-width: 0;
-    align-items: center;
-    text-align: center;
-    aspect-ratio: 4/5;
-    object-fit: cover;
-
 }
 
 .gallery {
-
-    background-color: white;
+    background-color: var(--white);
     text-align: center;
-    padding-top: 120px;
-    padding-bottom: 50px;
-
-    h1 {
-
-        font-family: "Bebas Neue", cursive;
-        text-decoration: none;
-        font-size: 95px;
-        font-weight: 400;
-
-        margin-bottom: 0;
-    }
+    padding: 120px 0px 50px;
 
     p {
-        font-family: "Lora", serif;
-        font-size: 19px;
-        margin: 0;
+        padding: 0px 40px;
     }
 }
 
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
-    padding: auto 0;
+    background-color: var(--white);
 
     img {
         display: block;
         width: 25%;
-        height: auto;
         aspect-ratio: 1/1;
         object-fit: cover;
     }
 }
 
 .review {
-    background-color: white;
-    align-items: center;
+    background-color: var(--white);
     text-align: center;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        text-decoration: none;
-        font-size: 95px;
-        font-weight: 400;
-        margin-top: 150px;
-        margin-bottom: 0;
+        padding: 150px 40px 0px;
     }
 }
 
 .reviews-container {
-    justify-content: center;
     display: flex;
-    flex-direction: row;
-    background-color: white;
-    text-align: center;
-    padding: 60px 100px 70px;
+    justify-content: center;
+    align-items: stretch;
     gap: 20px;
+    padding: 60px 100px 70px;
 }
 
 .reviews-box {
     flex: 1;
     max-width: 400px;
-    background-color: black;
-    color: white;
-    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 20px;
 
     h4 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 25px;
         margin-bottom: 50px;
     }
 
     p {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 19px;
         margin-bottom: 50px;
     }
 
     .stars {
-        color: #AB8C4C;
+        color: var(--gold);
         font-size: 36px;
         letter-spacing: 15px;
     }
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(2, 2, 2, 0.275), rgba(18, 18, 18, 0.275)), url('../images/footer.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-    padding: 150px 130px;
-
-    p {
-        font-family: "Lora", serif;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 19px;
-        color: white;
-        max-width: 550px;
-        text-align: center;
-        max-width: 700px;
-    }
-}
-
-.socials {
-    display: flex;
-    gap: 12px;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    background: white;
-    border-radius: 50%;
-}
-
-.social-icon img {
-    width: 16px;
-    height: 16px;
-}
-
 /*Media Qeury*/
 
+/* In-between */
+@media (max-width: 1240px) {
+
+    .elegance {
+        padding: 80px 60px 0px;
+    }
+
+    .cards-container {
+        gap: 40px;
+    }
+
+    .reviews-container {
+        padding: 60px 40px 70px;
+    }
+}
+
 /*Tablet*/
-
 @media (max-width: 1024px) {
-    .header {
-        padding: 20px 40px;
-        position: relative;
-        background-color: black;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .nav {
-        display: none;
-    }
-
     .hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.534)), url("../images/Best-table.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.53)), url("../images/Best-table.png");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     .hero-img {
@@ -336,8 +159,7 @@ body {
         margin: 140px 80px;
 
         h1 {
-            text-align: left;
-            margin: 0;
+            margin: 20px 0px;
         }
 
         p {
@@ -349,22 +171,22 @@ body {
         padding: 60px 100px;
     }
 
-    .card,
-    .card-main {
-        width: 100%;
-        flex: none;
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        max-width: none;
-    }
-
     .cards-container {
         flex-direction: column;
         gap: 70px;
+        padding-bottom: 0px;
+    }
+
+    .card,
+    .card-main {
+        flex: none;
+        width: 100%;
+        max-width: none;
+        aspect-ratio: 1/1;
     }
 
     .gallery-grid {
-        padding: 80px 60px;
+        padding: 0px 60px 80px;
 
         img {
             width: 50%;
@@ -374,64 +196,33 @@ body {
     .reviews-container {
         flex-direction: column;
         align-items: center;
-        gap: 140px;
-        padding: 80px;
+        gap: 80px;
+        padding: 80px 40px 120px;
     }
 
     .reviews-box {
         flex: none;
         width: 75%;
         max-width: none;
-        margin: 0 80px;
-        padding: 90px 120px;
-        gap: 80px;
+        box-sizing: border-box;
+        padding: 90px 60px;
 
+        h4,
         p {
-            margin: 60px;
+            margin-bottom: 60px;
         }
     }
-
-    .footer {
-        padding: 130px 150px;
-    }
-
-    .footer img {
-        width: 100%;
-        height: auto;
-    }
-
-    .socials {
-        justify-content: center;
-    }
-
-    .social-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .social-icon img {
-        width: 20px;
-        height: 20px;
-    }
-
 }
 
 /* For mobile phones */
 @media (max-width: 640px) {
 
-    .hamburger-menu {
-        display: block;
-        width: 40px;
-        height: 40px;
-    }
-
     .hero-content {
         margin: 50px 35px;
-        text-align: left;
     }
 
     .elegance {
-        padding: 40px 100px;
+        padding: 40px 60px;
     }
 
     .cards-container {
@@ -440,37 +231,42 @@ body {
     }
 
     .gallery {
-        padding-top: 80px;
-        padding-bottom: 0px;
+        padding: 80px 0px 20px;
+
+        p {
+            padding: 0px 30px;
+        }
     }
 
     .gallery-grid {
-        padding: 20px 0;
+        padding: 0px;
 
         img {
             width: 100%;
         }
     }
 
+    .review h1 {
+        padding: 80px 30px 0px;
+    }
+
     .reviews-container {
         gap: 65px;
-        padding: 65px 55px;
+        padding: 65px 30px;
     }
 
     .reviews-box {
-        padding: 50px 50px;
+        width: 100%;
+        padding: 50px 30px;
 
+        h4,
         p {
-            margin: 30px 0;
+            margin-bottom: 30px;
+        }
+
+        .stars {
+            font-size: 28px;
+            letter-spacing: 8px;
         }
     }
-
-    .footer {
-        padding: 40px 45px 100px 45px;
-
-        p {
-            padding-bottom: 30px;
-        }
-    }
-
 }
