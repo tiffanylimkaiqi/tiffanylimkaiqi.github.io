@@ -96,7 +96,7 @@
 
 .complementary {
     background-color: var(--white);
-    padding: 90px 140px;
+    padding: 90px 140px 30px;
 }
 
 .complementary-stuffs {
@@ -160,6 +160,33 @@
     h4 {
         left: 100%;
         margin-left: 40px;
+    }
+}
+
+.reserve {
+    text-align: center;
+    margin-top: 50px;
+
+    h3 {
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        display: block;
+        margin: 0px auto;
+    }
+
+    .line {
+        width: 40px;
+        border-color: var(--black);
+    }
+
+    .line-left {
+        margin-right: 50px;
+    }
+
+    .line-right {
+        margin-left: 50px;
     }
 }
 
