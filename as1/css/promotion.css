@@ -267,6 +267,68 @@
 
 /*Media Queries*/
 
+@media (max-width: 1300px) {
+
+    .hero-content {
+        padding: 80px 60px;
+    }
+
+    .seasonal {
+        padding: 120px 60px 90px;
+    }
+
+    .seasonal-list {
+        gap: 40px;
+    }
+
+    .complementary {
+        padding: 90px 60px 32px;
+    }
+
+    .complementary-stuffs {
+        height: 1600px;
+    }
+
+    .photo-1,
+    .photo-2,
+    .photo-3 {
+        h4 {
+            width: 240px;
+        }
+    }
+
+    .photo-1 {
+        height: 800px;
+
+        h4 {
+            margin-left: 40px;
+        }
+    }
+
+    .photo-2 {
+        top: 600px;
+        height: 480px;
+
+        h4 {
+            margin-right: 60px;
+        }
+    }
+
+    .photo-3 {
+        top: 1080px;
+        height: 520px;
+
+        h4 {
+            margin-left: 40px;
+        }
+    }
+
+    .membership-list {
+        gap: 40px;
+        padding: 40px 60px 100px;
+    }
+}
+
 /*Tablet*/
 @media (max-width: 1024px) {
     .hero {
@@ -350,5 +412,124 @@
         max-width: none;
         min-height: 440px;
         box-sizing: border-box;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .hero-content {
+        padding: 90px 80px;
+    }
+
+    .seasonal,
+    .complementary {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .membership-list {
+        padding: 80px 50px;
+    }
+
+    .membership-card {
+        width: 47%;
+        padding: 30px 20px 25px;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 640px) {
+    .hero-img {
+        aspect-ratio: 7/8;
+    }
+
+    .hero-content {
+        padding: 120px 40px 130px;
+
+        h1 {
+            max-width: none;
+            font-size: var(--h2-size);
+            line-height: var(--h2-line);
+            margin: 20px 0px 25px;
+        }
+
+        p {
+            max-width: none;
+        }
+    }
+
+    .seasonal {
+        padding: 100px 40px;
+    }
+
+    .seasonal-list {
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .seasonal-card {
+        h4 {
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 10px 0px 15px;
+        }
+    }
+
+    .evening-banner {
+        padding: 120px 30px;
+    }
+
+    .complementary {
+        padding: 120px 60px 32px;
+    }
+
+    .photo-1,
+    .photo-2,
+    .photo-3 {
+        margin-bottom: 70px;
+
+        h4 {
+            margin-top: 20px;
+        }
+    }
+
+    .reserve {
+        h3 {
+            margin-bottom: 25px;
+        }
+
+        .line {
+            width: 20px;
+        }
+
+        .line-left {
+            margin-right: 15px;
+        }
+
+        .line-right {
+            margin-left: 15px;
+        }
+    }
+
+    .membership {
+        padding: 120px 30px;
+    }
+
+    .membership-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 100px 40px;
+    }
+
+    .membership-card {
+        width: 100%;
+        max-width: 415px;
+        min-height: 465px;
+        padding: 30px 30px 25px;
     }
 }
