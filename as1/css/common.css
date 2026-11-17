@@ -245,8 +245,8 @@ li {
 }
 
 .btn.white {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
     border-color: var(--white);
 }
 

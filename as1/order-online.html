@@ -4,93 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Restaurant</title>
-    <!-- common.css first, then this page's own CSS -->
+    <title>Order Online</title>
     <link href="css/common.css" rel="stylesheet">
-    <link href="css/our-restraurant.css" rel="stylesheet">
+    <link href="css/order-online.css" rel="stylesheet">
 </head>
 
 <body>
+
     <div class="container">
         <div class="header">
             <div class="logo">
                 <img src="images/Logo.png" alt="Romaliya logo">
                 <span>ROMALIYA</span>
             </div>
-            <div class="nav">
+            <div class="nav" id="mobile-menu">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
-                <a href="order-online.html">Order</a>
+                <a href="order-online.html" class="active">Order</a>
                 <a href="promotion.html">Promotion</a>
                 <a href="about-us.html">About Us</a>
-                <a href="our-restraurant.html" class="active">Our Restaurant</a>
+                <a href="our-restraurant.html">Our Restaurant</a>
                 <a href="cart.html"><img src="images/Cart.png" alt="Cart"></a>
             </div>
-            <img src="images/hamburger-menu.png" alt="Menu" class="hamburger-menu">
+            <div class="hamburger-menu" id="menu-toggle">&#9776;</div>
         </div>
 
         <div class="hero">
             <div class="hero-content">
-                <h3 class="eyebrow">Fine Dining experience</h3>
-                <h1 class="hero-title">the best table in town</h1>
-                <p>ROMALIYA combines elegant interiors, exceptional cuisine, and warm hospitality to create a dining
-                    destination where every visit feels special from the moment you arrive.</p>
-            </div>
-            <div class="hero-img">
-            </div>
-        </div>
-
-        <div class="elegance">
-            <h1 class="title">Elegance in every detail</h1>
-
-            <div class="cards-container">
-                <img src="images/elegance-left.png" alt="Grand dining hall" class="card">
-                <img src="images/elegance-main.png" alt="Restaurant dining room" class="card-main">
-                <img src="images/elegance-right.png" alt="Table setting" class="card">
+                <h3 class="eyebrow lined">
+                    <span class="line line-left"></span>
+                    Romaliya takeout
+                    <span class="line line-right"></span>
+                </h3>
+                <h1 class="hero-title">
+                    <span class="title-desktop">Order Online</span>
+                    <span class="title-tablet">Cart</span>
+                </h1>
             </div>
         </div>
-
-        <div class="gallery">
-            <h1 class="title">Gallery</h1>
-            <p>Discover ROMALIYA's signature dishes, elegant interiors, and handcrafted cocktails.</p>
+        <div class="favourites">
+            <div>
+                <h3 class="eyebrow">FROM OUR KITCHEN TO YOUR TABLE</h3>
+                <h2 class="object-title">Choose your favourites</h2>
+                <p>Select a quantity, add your dishes to the cart, then review everything before checkout.</p>
+            </div>
+            <button class="btn outline">View More</button>
         </div>
 
-        <div class="gallery-grid">
-            <img src="images/Pasta.jpg" alt="Pasta">
-            <img src="images/Blueberry.jpg" alt="Blueberry french toast">
-            <img src="images/People.jpg" alt="Guests dining">
-            <img src="images/Drink.jpg" alt="Cocktail">
-            <img src="images/Cheesecake.jpg" alt="Cheesecake">
-            <img src="images/Fih.jpg" alt="Fish dish">
-            <img src="images/Choco-Cake.jpg" alt="Chocolate cake">
-            <img src="images/Pasta-Salad.jpg" alt="Pasta salad">
+        <div class="signature">
+            <h3 class="eyebrow">Chef's Signature</h3>
+            <h1 class="object-title">Fine Dining Favourites</h1>
+            <div class="signature-container">
+                <div class="signature-card">
+                    <img src="images/lobstor.png" alt="Butter-poached lobster">
+                    <div class="signature-text">
+                        <h3 class="eyebrow">Signature seafood</h3>
+                        <h1 class="object-title food-name">Butter-poached lobster</h1>
+                        <p>Tender lobster gently poached in butter for a rich, delicate finish.</p>
+                        <span class="price">$ 88</span>
+
+                        <div class="press">
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="btn gold">add to cart</button>
+                            <button class="btn outline-white">view cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="signature-card">
+                    <img src="images/steak.png" alt="Duck breast with cherry sauce">
+                    <div class="signature-text">
+                        <h3 class="eyebrow">chef's pick</h3>
+                        <h1 class="object-title food-name">DUCK BREAST WITH CHERRY SAUCE</h1>
+                        <p>Juicy duck breast paired with a bright cherry sauce for a sweet-savory balance.</p>
+                        <span class="price">$ 58</span>
+
+                        <div class="press">
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="btn gold">add to cart</button>
+                            <button class="btn outline-white">view cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="review">
-            <h1 class="title">What people say about us</h1>
-
-            <div class="reviews-container">
-                <div class="reviews-box">
-                    <h4 class="sub-object-title">Emily Carter</h4>
-                    <p>"An unforgettable dining experience.
-                        The Beef Wellington was perfectly cooked."</p>
-                    <div class="stars">★★★★★</div>
+        <div class="house-favourite">
+            <div class="house-card">
+                <img src="images/pork.png" alt="Twice cooked pork">
+                <div class="house-info">
+                    <h3 class="eyebrow">House Favourite</h3>
+                    <h1 class="sub-title food-name">Twice cooked pork</h1>
+                    <p>Nunc nec neque cras id dui curabitur blandit mollis lacus.</p>
+                    <div class="press">
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <button class="btn white">add to cart</button>
+                    </div>
                 </div>
 
-                <div class="reviews-box">
-                    <h4 class="sub-object-title">Daniel Wong</h4>
-                    <p>"ROMALIYA exceeded expectations. Elegant atmosphere, crafted cocktails."</p>
-                    <div class="stars">★★★★★</div>
+            </div>
+        </div>
+        <div class="sushi">
+            <h3 class="eyebrow">Chef's signature</h3>
+            <h1 class="object-title">Fine Dining Favourites</h1>
+
+            <div class="sushi-container">
+                <div class="sushi-card">
+                    <img src="images/ahi-salmon.png" alt="Ahi salmon nigiri">
+                    <div class="signature-text">
+                        <h1 class="object-title food-name">Ahi Salmon Nigiri</h1>
+                        <p>Fresh salmon served nigiri-style with a clean, delicate finish.</p>
+                        <span class="price">$24</span>
+                    </div>
+                    <div class="press">
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <button class="btn gold">add to cart</button>
+                        <button class="btn outline-white">view cart</button>
+                    </div>
                 </div>
 
-                <div class="reviews-box">
-                    <h4 class="sub-object-title">Sophia Lim</h4>
-                    <p>"Courses were flavorful, desserts exceptional, and detail remarkable."</p>
-                    <div class="stars">★★★★★</div>
+                <div class="sushi-card">
+                    <img src="images/char-siu.png" alt="Char siu and sushis">
+                    <div class="signature-text">
+                        <h1 class="object-title food-name">Char Siu &amp; Sushis</h1>
+                        <p>Cantonese barbecue pork paired with an assortment of freshly prepared sushi.</p>
+                        <span class="price">$48</span>
+                    </div>
+                    <div class="press">
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <button class="btn gold">add to cart</button>
+                        <button class="btn outline-white">view cart</button>
+                    </div>
                 </div>
+
+                <div class="sushi-card">
+                    <img src="images/california.png" alt="California rolls">
+                    <div class="signature-text">
+                        <h1 class="object-title food-name">California rolls</h1>
+                        <p>Fresh sushi rolls filled with crab, avocado, cucumber, and creamy mayonnaise.</p>
+                        <span class="price">$22</span>
+                    </div>
+                    <div class="press">
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <button class="btn gold">add to cart</button>
+                        <button class="btn outline-white">view cart</button>
+                    </div>
+                </div>
+
             </div>
         </div>
 
+        <div class="checkout">
+            <h3 class="eyebrow">Ready to checkout?</h3>
+            <h1 class="object-title">Review Your Cart</h1>
+            <p>You still can edit your product quantity in the cart.</p>
+            <button class="btn gold">View your cart and checkout</button>
+        </div>
         <div class="footer">
             <div class="logo">
                 <img src="images/Logo.png" alt="Romaliya logo">
@@ -107,6 +198,7 @@
             </div>
         </div>
     </div>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>
