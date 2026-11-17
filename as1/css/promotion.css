@@ -1,87 +1,101 @@
 .hero {
     display: flex;
+    background-color: var(--black);
 }
 
 .hero-img {
     flex: 1;
-    width: 50%;
     background-image: url("../images/best-coctails.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .hero-content {
+    flex: 1;
     padding: 110px;
-    text-align: left;
-    align-items: left;
-    color: white;
+    color: var(--white);
+
+    h1 {
+        max-width: 480px;
+        margin: 25px 0px 35px;
+    }
 
     p {
-        width: 410px;
+        max-width: 410px;
+    }
+
+    .deal {
+        margin: 20px 0px 35px;
     }
 }
 
 .seasonal {
-    background-color: white;
+    background-color: var(--white);
     text-align: center;
     padding: 120px 140px 90px;
+
+    h2 {
+        margin-bottom: 15px;
+    }
 }
 
 .seasonal-list {
-    margin-top: 70px;
     display: flex;
-    flex-direction: row;
-    gap: 60px;
     align-items: stretch;
+    gap: 60px;
+    margin-top: 70px;
 }
 
 .seasonal-card {
     flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 
     img {
+        display: block;
         width: 100%;
-        object-fit: cover;
         aspect-ratio: 3/4;
-        border-radius: 200px;
+        object-fit: cover;
         object-position: center;
+        border-radius: 200px;
+    }
+
+    h4 {
+        margin-top: 40px;
+    }
+
+    p {
+        margin: 15px 0px 25px;
+    }
+
+    .btn {
+        margin-top: auto;
     }
 }
 
 .evening-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.59)), url("../images/evening-banner.png");
-    background-size: cover;
-    align-items: center;
     text-align: center;
-    padding: 140px 0;
-    color: white;
+    padding: 140px 40px;
+    color: var(--white);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url("../images/evening-banner.png");
+    background-size: cover;
+    background-position: center;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 70px;
-        margin: 0;
-    }
-
-    h2 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        font-size: 15px;
+        margin: 10px 0px 20px;
     }
 
     p {
-        text-align: center;
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 19px;
-        width: 815px;
-        min-width: 0;
-        margin: auto;
+        max-width: 815px;
+        margin: 0px auto;
     }
 }
 
 .complementary {
-    background-color: white;
+    background-color: var(--white);
     padding: 90px 140px;
 }
 
@@ -89,54 +103,64 @@
     position: relative;
     max-width: 1250px;
     height: 2030px;
+    margin: 0px auto;
+}
+
+.photo-1,
+.photo-2,
+.photo-3 {
+    position: absolute;
 
     img {
-        position: absolute;
         display: block;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        min-width: 50%;
-        max-width: 100%;
     }
 
-    .photo-1 {
-        img {
-            max-width: 808px;
-            display: block;
-        }
-
-        h4 {
-            top: 400px;
-            right: 20px;
-        }
-    }
-
-    .photo-2 {
-        img {
-            max-width: 610px;
-            bottom: 500px;
-            right: 0px;
-            display: block;
-        }
-
-        h4 {
-            top: 55%;
-            left: 15%
-        }
-
-    }
-
-    .photo-3 {
-        img {
-            object-fit: contain;
-            max-width: 510px;
-            max-height: 636px;
-            bottom: 20px;
-            left: 150px;
-        }
-
-        h4 {
-            bottom: 15%;
-            right: 8%;
-        }
+    h4 {
+        position: absolute;
+        top: 50%;
+        width: 340px;
     }
 }
+
+.photo-1 {
+    top: 0px;
+    left: 0%;
+    width: 65%;
+    height: 1000px;
+
+    h4 {
+        left: 100%;
+        margin-left: 50px;
+    }
+}
+
+
+.photo-2 {
+    top: 760px;
+    right: 0%;
+    width: 48%;
+    height: 600px;
+
+    h4 {
+        right: 100%;
+        margin-right: 100px;
+        text-align: center;
+    }
+}
+
+.photo-3 {
+    top: 1360px;
+    left: 24%;
+    width: 41%;
+    height: 650px;
+
+    h4 {
+        left: 100%;
+        margin-left: 40px;
+    }
+}
+
+/*Media Queries*/

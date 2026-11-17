@@ -5,94 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promotion</title>
-    <link href="css/promotion.css" rel="stylesheet">
+    <!-- common.css first, then this page's own CSS -->
     <link href="css/common.css" rel="stylesheet">
+    <link href="css/promotion.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="images/Logo.png" width="64px">
+                <img src="images/Logo.png" alt="Romaliya logo">
                 <span>ROMALIYA</span>
             </div>
             <div class="nav">
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="order-online.html">Order</a>
-                <a href="promotion.html">Promotion</a>
+                <a href="promotion.html" class="active">Promotion</a>
                 <a href="about-us.html">About Us</a>
                 <a href="our-restraurant.html">Our Restaurant</a>
-                <a href="cart.html"><img src="images/Cart.png" width="24px"></a>
+                <a href="cart.html"><img src="images/Cart.png" alt="Cart"></a>
             </div>
-            <img src="images/hamburger-menu.png" class="hamburger-menu" width="24px" height="24px">
+            <img src="images/hamburger-menu.png" alt="Menu" class="hamburger-menu">
         </div>
 
         <div class="hero">
             <div class="hero-img"></div>
             <div class="hero-content">
-                <span class="eyebrow-heading">featured promotion</span>
-                <h1>Golden sunset mocktail</h1>
+                <span class="eyebrow">featured promotion</span>
+                <h1 class="hero-title">Golden sunset mocktail</h1>
                 <p>A refreshing blend of tropical fruits with sparkling soda, finished with a hint of citrus.</p>
-                <p>Buy 1, Get 1 50% OFF</p>
-                <button class="white-btn">discover more</button>
+                <p class="deal">Buy 1, Get 1 50% OFF</p>
+                <button class="btn white">discover more</button>
             </div>
         </div>
+
         <div class="seasonal">
             <span class="section-title">Seasonal Specials</span>
-            <h2>A taste of the season</h2>
+            <div class="short-line"></div>
+            <h2 class="title">A taste of the season</h2>
             <p>Experience our limited-time menu featuring fresh seasonal ingredients, carefully crafted by our chefs.
             </p>
 
             <div class="seasonal-list">
                 <div class="seasonal-card">
-                    <img src="images/seasonal-1.png">
-                    <h4>Garlic butter beef tendrloin</h4>
+                    <img src="images/seasonal-1.png" alt="Garlic butter beef tenderloin">
+                    <h4 class="object-title food-name">Garlic butter beef tendrloin</h4>
                     <p>Tender, juicy ribeye grilled to perfection.</p>
-                    <button class="white-btn">Learn More</button>
+                    <button class="btn outline">Learn More</button>
                 </div>
 
                 <div class="seasonal-card">
-                    <img src="images/seasonal-2.png">
-                    <h4>Signature Ribeye Steak</h4>
+                    <img src="images/seasonal-2.png" alt="Signature ribeye steak">
+                    <h4 class="object-title food-name">Signature Ribeye Steak</h4>
                     <p>Premium beef served with our chef's signature sauce.</p>
-                    <button class="white-btn">Learn More</button>
+                    <button class="btn outline">Learn More</button>
                 </div>
 
                 <div class="seasonal-card">
-                    <img src="images/seasonal-3.jpg">
-                    <h4>pink lychee sparkler</h4>
+                    <img src="images/seasonal-3.jpg" alt="Pink lychee sparkler">
+                    <h4 class="object-title food-name">pink lychee sparkler</h4>
                     <p>A refreshing blend of berries with a delicate floral finish.</p>
-                    <button class="white-btn">Learn More</button>
+                    <button class="btn outline">Learn More</button>
                 </div>
             </div>
         </div>
 
         <div class="evening-banner">
-            <h2>Romantic Dining Collection</h2>
-            <h1>An evening to remember</h1>
+            <h2 class="eyebrow">Romantic Dining Collection</h2>
+            <h1 class="title">An evening to remember</h1>
             <p>Celebrate the season of love with a carefully crafted multi-course dinner, exquisite desserts, and a
                 romantic atmosphere designed for unforgettable moments.</p>
         </div>
+
         <div class="complementary">
             <div class="complementary-stuffs">
 
-                <div class="photo-2">
-                    <img src="images/evening-2.jpg">
-                    <h4>4 course set menu</h4>
+                <div class="photo-1">
+                    <img src="images/evening-1.png" alt="Complimentary dessert for couples">
+                    <h4 class="sub-object-title">Complimentary dessert for couples</h4>
                 </div>
 
-
-                <div class="photo-1">
-                    <img src="images/evening-1.png">
-                    <h4>complementary dessert for couples</h4>
+                <div class="photo-2">
+                    <img src="images/evening-2.jpg" alt="4-course set menu">
+                    <h4 class="sub-object-title">4 course set menu</h4>
                 </div>
 
                 <div class="photo-3">
-                    <img src="images/evening-3.png">
-                    <h4>Complimentary glass of sparkling wine </h4>
+                    <img src="images/evening-3.png" alt="Complimentary glass of sparkling wine">
+                    <h4 class="sub-object-title">Complimentary glass of sparkling wine</h4>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="logo">
+                <img src="images/Logo.png" alt="Romaliya logo">
+                <span>ROMALIYA</span>
+            </div>
+            <p>From the first welcome to the last bite, every detail is designed to create a memorable dining experience
+                for you and your loved ones.</p>
+
+            <div class="socials">
+                <div class="social-icon"><img src="images/facebook.png" alt="Facebook"></div>
+                <div class="social-icon"><img src="images/twitter.png" alt="X"></div>
+                <div class="social-icon"><img src="images/instagram.png" alt="Instagram"></div>
+                <div class="social-icon"><img src="images/youtube.png" alt="YouTube"></div>
             </div>
         </div>
     </div>
