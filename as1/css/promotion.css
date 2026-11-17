@@ -208,4 +208,51 @@
     }
 }
 
+.membership-card {
+    flex: 1;
+    min-width: 0;
+    max-width: 330px;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 25px;
+    color: var(--white);
+    background-size: cover;
+    background-position: bottom;
+
+    h4 {
+        margin: 20px 0px 25px;
+    }
+
+    ul {
+        align-self: stretch;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    li {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        margin-top: auto;
+    }
+}
+
+.classic {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.45)), url("../images/member-1.jpg");
+}
+
+.prestige {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.45)), url("../images/member-2.jpg");
+}
+
+.elite {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.45)), url("../images/member-3.jpg");
+}
+
 /*Media Queries*/
