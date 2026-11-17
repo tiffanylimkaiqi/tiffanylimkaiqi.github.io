@@ -1,77 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-    background-color: black;
-    margin: 0px;
-    gap: 0px;
-    padding: 0px;
-}
-
-.logo {
-
-    display: flex;
-    gap: 18px;
-
-    align-items: center;
-    justify-content: center;
-
-    span {
-        font-family: "Bebas Neue", cursive;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 40px;
-        text-transform: uppercase;
-        color: white;
-        align-self: center;
-    }
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    gap: 0px;
-}
-
-.header {
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 80px;
-}
-
-.nav {
-    font-family: "Work Sans", sans-serif;
-    margin: auto;
-    margin-right: 0px;
-    display: flex;
-    gap: 20px;
-}
-
-.nav a {
-    color: #A1A1A1;
-    text-decoration: none;
-}
-
-.hamburger-menu {
-    display: none;
-}
-
 .hero {
     display: flex;
-    background-color: black;
+    background-color: var(--black);
 }
 
 .hero-img {
     flex: 1.5;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0, 0, 0, 0.534)), url("../images/aboutus-hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.53)), url("../images/aboutus-hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,75 +18,44 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-
-    padding: 200px 120px;
-
+    color: var(--white);
+    padding: 160px 120px;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 95px;
-        margin: 0;
         margin-top: 20px;
     }
 
-    h3 {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0px;
-        font-size: 17px;
-        position: relative;
-        display: inline-block;
-    }
-
     p {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 16px;
-        width: 430px;
-        min-width: 0;
+        max-width: 430px;
+        margin-top: 20px;
     }
 
     .line {
-        position: absolute;
-        top: 50%;
         width: 80px;
-        border-bottom: 1px solid white;
     }
 
     .line-left {
-        right: 100%;
         margin-right: 80px;
     }
 
     .line-right {
-        left: 100%;
         margin-left: 80px;
     }
 }
 
 .culinary {
-    background-color: white;
-    align-items: center;
+    background-color: var(--white);
     text-align: center;
-    padding: 60px 0px 60px;
+    padding: 60px 0px;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 95px;
-        margin: 0 0 40px;
+        margin: 0px 24px 40px;
     }
 
     p {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 19px;
         max-width: 1035px;
-        min-width: 0;
-        margin: 40px auto;
+        margin: 40px auto 0px;
+        padding: 0px 40px;
     }
 }
 
@@ -163,8 +66,8 @@ body {
     img {
         display: block;
         flex: 1;
-        aspect-ratio: 3/2;
         min-width: 0;
+        aspect-ratio: 3/2;
         object-fit: cover;
         object-position: center;
     }
@@ -172,6 +75,7 @@ body {
 
 .commitment {
     display: flex;
+    background-color: var(--black);
 
     img {
         display: block;
@@ -184,197 +88,122 @@ body {
 .commitment-info {
     flex: 1;
     padding: 200px 80px;
-    color: wheat;
-    text-align: left;
+    color: var(--white);
 
     h2 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 70px;
+        margin-bottom: 20px;
     }
 
     p {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 19px;
-        width: 370px;
-        min-width: 0;
+        max-width: 370px;
     }
 }
 
 .achivement {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0.737)), url("../images/achivements.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.74)), url("../images/achivements.png");
     background-size: cover;
+    background-position: center;
     text-align: center;
-    color: white;
-    padding-bottom: 190px;
+    color: var(--white);
+    padding: 150px 40px 190px;
 
     h1 {
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 70px;
-        margin: 150px auto 45px;
+        margin-bottom: 45px;
     }
 
     p {
-        font-family: "Lora", serif;
-        font-weight: 400;
-        font-size: 19px;
-        min-width: 0;
         max-width: 900px;
-        margin: 0 auto 40px;
+        margin: 0px auto 40px;
     }
 }
 
 .awards {
     display: flex;
     justify-content: space-between;
-    margin: 60px 140px;
     gap: 100px;
+    margin: 60px 100px;
 }
 
 .award-card {
+    flex: 1;
+    min-width: 0;
+
     h3 {
         display: inline-block;
-        font-family: "Bebas Neue", cursive;
-        font-weight: 400;
-        font-size: 56px;
         margin-bottom: 20px;
-        padding: 0 12px 10px;
-        border-bottom: 1px solid white;
+        padding: 0px 12px 10px;
+        border-bottom: 1px solid var(--white);
     }
 
     img {
         display: block;
         width: 100%;
-        object-fit: contain;
         height: 300px;
+        object-fit: contain;
     }
 }
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(2, 2, 2, 0.275), rgba(18, 18, 18, 0.275)), url('../images/footer.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-    padding: 150px 130px;
-
-    p {
-        font-family: "Lora", serif;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 19px;
-        color: white;
-        max-width: 550px;
-        text-align: center;
-        max-width: 700px;
-    }
-}
-
-.socials {
-    display: flex;
-    gap: 12px;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    background: white;
-    border-radius: 50%;
-}
-
-.social-icon img {
-    width: 16px;
-    height: 16px;
-}
-
 
 /*Media Query*/
-@media (max-width:1300px) {
+
+/* In-between */
+@media (max-width: 1300px) {
+
     .hero-content {
         padding: 150px 80px;
     }
 
-    .culinary {
-        p {
-            max-width: 935px;
-            min-width: 0;
-        }
+    .culinary p {
+        max-width: 935px;
     }
 
     .commitment-info {
         padding: 80px 40px;
+    }
 
+    .awards {
+        gap: 60px;
+        margin: 60px 40px;
     }
 }
 
 /*Tablet*/
-
 @media (max-width: 1024px) {
-    .header {
-        padding: 20px 40px;
-        position: absolute;
-        background-color: black;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
     .hero {
         flex-direction: column;
-        height: auto;
     }
 
     .hero-img {
-        background-image: url("../images/aboutus-hero.png");
         flex: none;
         aspect-ratio: 4/3;
+        background-image: url("../images/aboutus-hero.png");
     }
 
     .hero-content {
-        padding: 120px 200px;
+        padding: 120px 100px;
 
         p {
-            width: auto;
+            max-width: 500px;
             margin-top: 40px;
         }
-    }
 
-    .line {
-        display: none;
+        .line {
+            display: none;
+        }
     }
 
     .culinary {
         p {
-            margin: 60px 140px 0;
+            margin-top: 60px;
+            padding: 0px 140px;
         }
     }
 
-    .culinary-img {
-        gap: 0;
-        aspect-ratio: 4/2;
-    }
-
     .commitment {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.615)), url("../images/commitment-1.png");
+        flex-direction: column;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/commitment-1.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        flex-direction: column;
 
         img {
             display: none;
@@ -383,115 +212,71 @@ body {
 
     .commitment-info {
         text-align: center;
-        align-items: center;
-        margin: auto;
-        padding: 200px 150px;
+        padding: 200px 120px;
 
         p {
-            width: auto;
-            min-width: 0;
+            max-width: none;
         }
     }
 
     .achivement {
-
-        background-position: center;
-        filter: grayscale(1);
-
-        h1 {
-            margin: 130px 0 40px;
-        }
+        padding: 130px 40px 150px;
 
         p {
-            margin: 0 175px;
+            max-width: 600px;
         }
     }
 
     .awards {
         flex-direction: column;
         gap: 90px;
-    }
-
-    .footer {
-        padding: 130px 150px;
-    }
-
-    .footer img {
-        width: 100%;
-        height: auto;
-    }
-
-    .socials {
-        justify-content: center;
-    }
-
-    .social-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .social-icon img {
-        width: 20px;
-        height: 20px;
+        margin: 60px auto;
+        max-width: 400px;
     }
 }
 
-
+/*Phone*/
 @media (max-width: 640px) {
 
-    .hamburger-menu {
-        display: block;
-        width: 40px;
-        height: 40px;
-    }
-
     .hero-content {
-        padding: 80px 95px;
+        padding: 80px 30px;
     }
 
     .culinary {
-        padding: 35px 0;
+        padding: 35px 0px;
 
         h1 {
-            font-size: 84px;
-            margin: 0 90px 20px;
+            margin-bottom: 20px;
         }
 
         p {
-            margin: 30px 50px;
+            margin-top: 30px;
+            padding: 0px 30px;
         }
     }
 
-    .culinary-img {
-        .culinary-2 {
-            display: none;
-        }
+    .culinary-img .culinary-2 {
+        display: none;
     }
 
     .commitment-info {
-        padding: 95px 65px;
+        padding: 95px 30px;
     }
 
     .achivement {
-        h1 {
-            margin: 40px 0;
-        }
+        padding: 40px 30px 100px;
 
-        p {
-            margin: 0 35px;
+        h1 {
+            margin-bottom: 30px;
         }
     }
 
     .awards {
         gap: 45px;
+        max-width: 280px;
     }
 
-    .footer {
-        padding: 40px 45px 100px 45px;
-
-        p {
-            padding-bottom: 30px;
-        }
+    .award-card img {
+        height: 220px;
     }
-
 }

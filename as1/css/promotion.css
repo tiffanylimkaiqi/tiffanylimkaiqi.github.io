@@ -208,6 +208,16 @@
     }
 }
 
+.membership-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 90px;
+    background-color: var(--white);
+    padding: 40px 140px 100px;
+}
+
+
 .membership-card {
     flex: 1;
     min-width: 0;
@@ -256,3 +266,89 @@
 }
 
 /*Media Queries*/
+
+/*Tablet*/
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-img {
+        flex: none;
+        aspect-ratio: 1/1;
+    }
+
+    .hero-content {
+        flex: none;
+        padding: 100px 230px;
+    }
+
+    .seasonal {
+        padding: 100px 80px;
+    }
+
+    .seasonal-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 120px;
+    }
+
+    .seasonal-card {
+        flex: none;
+        width: 100%;
+        max-width: 565px;
+
+        img {
+            border-radius: 300px;
+        }
+    }
+
+    .complementary {
+        padding: 100px 80px 32px;
+    }
+
+    .complementary-stuffs {
+        height: auto;
+    }
+
+    .photo-1,
+    .photo-2,
+    .photo-3 {
+        position: static;
+        width: 100%;
+        max-width: 575px;
+        height: auto;
+        margin: 0px auto 120px;
+
+        img {
+            height: auto;
+            aspect-ratio: 4/5;
+        }
+
+        h4 {
+            position: static;
+            width: auto;
+            margin: 30px 0px 0px;
+            text-align: center;
+        }
+    }
+
+    .reserve {
+        margin-top: 0px;
+    }
+
+    .membership-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 100px 0px;
+        padding: 100px 100px;
+    }
+
+    .membership-card {
+        flex: none;
+        width: 44%;
+        max-width: none;
+        min-height: 440px;
+        box-sizing: border-box;
+    }
+}
