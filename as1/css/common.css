@@ -322,7 +322,12 @@ li {
 
 .hamburger-menu {
     display: none;
-    width: 28px;
+    width: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
 }
 
 .footer {
@@ -381,13 +386,47 @@ li {
 
 /* Tablet */
 @media (max-width: 1024px) {
+
     .nav {
-        display: none;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: -100%;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        background-color: var(--black);
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 10;
+
+        a {
+            text-align: center;
+            font-size: 24px;
+            padding: 12px 30px;
+        }
+
+        img {
+            width: 32px;
+        }
+    }
+
+    .nav.active {
+        right: 0px;
+        opacity: 1;
+    }
+
+    .logo,
+    .hamburger-menu {
+        position: relative;
+        z-index: 11;
     }
 
     .hamburger-menu {
         display: block;
     }
+
 
     .footer {
         padding: 100px 60px;
