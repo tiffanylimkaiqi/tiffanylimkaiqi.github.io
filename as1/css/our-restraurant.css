@@ -51,12 +51,12 @@
 
 .card {
     flex: 1;
-    max-width: 300px;
+    width: 300px;
 }
 
 .card-main {
     flex: 1.5;
-    max-width: 420px;
+    width: 420px;
 }
 
 .gallery {

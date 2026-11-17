@@ -53,7 +53,6 @@
     }
 
     p {
-        max-width: 1035px;
         margin: 40px auto 0px;
         padding: 0px 40px;
     }
@@ -92,10 +91,6 @@
 
     h2 {
         margin-bottom: 20px;
-    }
-
-    p {
-        max-width: 370px;
     }
 }
 
